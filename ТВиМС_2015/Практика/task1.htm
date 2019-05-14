@@ -1,0 +1,529 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//RU">
+<!-- (c) 2015 Pankratov Anton & Arabadzhi Bogdan, BSUIR -->
+<html>
+
+<head>
+  <link rel=stylesheet href="../Оболочка/css/style.css" type="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="ru">
+  <title>Практика по дисциплине &quot;Теория вероятностей и математическая статистика&quot;</title>
+  <base target="_top">
+
+  <style>
+<!--
+ /* Font Definitions */
+ @font-face
+  {font-family:Wingdings;
+  panose-1:5 0 0 0 0 0 0 0 0 0;
+  mso-font-charset:2;
+  mso-generic-font-family:auto;
+  mso-font-pitch:variable;
+  mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+  {font-family:Wingdings;
+  panose-1:5 0 0 0 0 0 0 0 0 0;
+  mso-font-charset:2;
+  mso-generic-font-family:auto;
+  mso-font-pitch:variable;
+  mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:"";
+  margin:0cm;
+  margin-bottom:.0001pt;
+  mso-pagination:widow-orphan;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";}
+h1
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-link:"Çàãîëîâîê 1 Çíàê";
+  mso-style-next:Îáû÷íûé;
+  margin:0cm;
+  margin-bottom:.0001pt;
+  mso-pagination:widow-orphan;
+  page-break-after:avoid;
+  mso-outline-level:1;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  mso-font-kerning:0pt;}
+h2
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-link:"Çàãîëîâîê 2 Çíàê";
+  mso-style-next:Îáû÷íûé;
+  margin:0cm;
+  margin-bottom:.0001pt;
+  text-align:justify;
+  mso-pagination:widow-orphan;
+  page-break-after:avoid;
+  mso-outline-level:2;
+  font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  font-weight:normal;
+  font-style:italic;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+  {mso-style-unhide:no;
+  mso-style-link:"Îñíîâíîé òåêñò Çíàê";
+  margin:0cm;
+  margin-bottom:.0001pt;
+  mso-pagination:widow-orphan;
+  font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  font-style:italic;}
+span.1
+  {mso-style-name:"Çàãîëîâîê 1 Çíàê";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Çàãîëîâîê 1";
+  mso-ansi-font-size:12.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-weight:bold;}
+span.2
+  {mso-style-name:"Çàãîëîâîê 2 Çíàê";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Çàãîëîâîê 2";
+  mso-ansi-font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-style:italic;}
+span.a
+  {mso-style-name:"Îñíîâíîé òåêñò Çíàê";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Îñíîâíîé òåêñò";
+  mso-ansi-font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-style:italic;}
+span.SpellE
+  {mso-style-name:"";
+  mso-spl-e:yes;}
+span.GramE
+  {mso-style-name:"";
+  mso-gram-e:yes;}
+.MsoChpDefault
+  {mso-style-type:export-only;
+  mso-default-props:yes;
+  font-family:"Calibri","sans-serif";
+  mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:Calibri;
+  mso-fareast-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi;
+  mso-fareast-language:EN-US;}
+.MsoPapDefault
+  {mso-style-type:export-only;
+  margin-bottom:10.0pt;
+  line-height:115%;}
+@page WordSection1
+  {size:595.3pt 841.9pt;
+  margin:2.0cm 42.5pt 2.0cm 3.0cm;
+  mso-header-margin:35.4pt;
+  mso-footer-margin:35.4pt;
+  mso-paper-source:0;}
+div.WordSection1
+  {page:WordSection1;}
+ /* List Definitions */
+ @list l0
+  {mso-list-id:1371417098;
+  mso-list-type:hybrid;
+  mso-list-template-ids:-449836344 68747265 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l0:level1
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0B7;
+  mso-level-tab-stop:54.0pt;
+  mso-level-number-position:left;
+  margin-left:54.0pt;
+  text-indent:-18.0pt;
+  font-family:Symbol;}
+@list l0:level2
+  {mso-level-number-format:bullet;
+  mso-level-text:o;
+  mso-level-tab-stop:90.0pt;
+  mso-level-number-position:left;
+  margin-left:90.0pt;
+  text-indent:-18.0pt;
+  font-family:"Courier New";
+  mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0A7;
+  mso-level-tab-stop:126.0pt;
+  mso-level-number-position:left;
+  margin-left:126.0pt;
+  text-indent:-18.0pt;
+  font-family:Wingdings;}
+@list l0:level4
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0B7;
+  mso-level-tab-stop:162.0pt;
+  mso-level-number-position:left;
+  margin-left:162.0pt;
+  text-indent:-18.0pt;
+  font-family:Symbol;}
+@list l0:level5
+  {mso-level-number-format:bullet;
+  mso-level-text:o;
+  mso-level-tab-stop:198.0pt;
+  mso-level-number-position:left;
+  margin-left:198.0pt;
+  text-indent:-18.0pt;
+  font-family:"Courier New";
+  mso-bidi-font-family:"Times New Roman";}
+@list l0:level6
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0A7;
+  mso-level-tab-stop:234.0pt;
+  mso-level-number-position:left;
+  margin-left:234.0pt;
+  text-indent:-18.0pt;
+  font-family:Wingdings;}
+@list l0:level7
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0B7;
+  mso-level-tab-stop:270.0pt;
+  mso-level-number-position:left;
+  margin-left:270.0pt;
+  text-indent:-18.0pt;
+  font-family:Symbol;}
+@list l0:level8
+  {mso-level-number-format:bullet;
+  mso-level-text:o;
+  mso-level-tab-stop:306.0pt;
+  mso-level-number-position:left;
+  margin-left:306.0pt;
+  text-indent:-18.0pt;
+  font-family:"Courier New";
+  mso-bidi-font-family:"Times New Roman";}
+@list l0:level9
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0A7;
+  mso-level-tab-stop:342.0pt;
+  mso-level-number-position:left;
+  margin-left:342.0pt;
+  text-indent:-18.0pt;
+  font-family:Wingdings;}
+@list l1
+  {mso-list-id:1488276850;
+  mso-list-type:hybrid;
+  mso-list-template-ids:-1325882580 68747279 1216091080 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l1:level1
+  {mso-level-tab-stop:36.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l1:level2
+  {mso-level-text:%2;
+  mso-level-tab-stop:72.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l1:level3
+  {mso-level-number-format:roman-lower;
+  mso-level-tab-stop:108.0pt;
+  mso-level-number-position:right;
+  text-indent:-9.0pt;}
+@list l1:level4
+  {mso-level-tab-stop:144.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l1:level5
+  {mso-level-number-format:alpha-lower;
+  mso-level-tab-stop:180.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l1:level6
+  {mso-level-number-format:roman-lower;
+  mso-level-tab-stop:216.0pt;
+  mso-level-number-position:right;
+  text-indent:-9.0pt;}
+@list l1:level7
+  {mso-level-tab-stop:252.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l1:level8
+  {mso-level-number-format:alpha-lower;
+  mso-level-tab-stop:288.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l1:level9
+  {mso-level-number-format:roman-lower;
+  mso-level-tab-stop:324.0pt;
+  mso-level-number-position:right;
+  text-indent:-9.0pt;}
+@list l2
+  {mso-list-id:2031181737;
+  mso-list-type:hybrid;
+  mso-list-template-ids:962083982 68747265 68747275 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l2:level1
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0B7;
+  mso-level-tab-stop:72.0pt;
+  mso-level-number-position:left;
+  margin-left:72.0pt;
+  text-indent:-18.0pt;
+  font-family:Symbol;}
+@list l2:level2
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0D8;
+  mso-level-tab-stop:108.0pt;
+  mso-level-number-position:left;
+  margin-left:108.0pt;
+  text-indent:-18.0pt;
+  font-family:Wingdings;}
+@list l2:level3
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0A7;
+  mso-level-tab-stop:144.0pt;
+  mso-level-number-position:left;
+  margin-left:144.0pt;
+  text-indent:-18.0pt;
+  font-family:Wingdings;}
+@list l2:level4
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0B7;
+  mso-level-tab-stop:180.0pt;
+  mso-level-number-position:left;
+  margin-left:180.0pt;
+  text-indent:-18.0pt;
+  font-family:Symbol;}
+@list l2:level5
+  {mso-level-number-format:bullet;
+  mso-level-text:o;
+  mso-level-tab-stop:216.0pt;
+  mso-level-number-position:left;
+  margin-left:216.0pt;
+  text-indent:-18.0pt;
+  font-family:"Courier New";
+  mso-bidi-font-family:"Times New Roman";}
+@list l2:level6
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0A7;
+  mso-level-tab-stop:252.0pt;
+  mso-level-number-position:left;
+  margin-left:252.0pt;
+  text-indent:-18.0pt;
+  font-family:Wingdings;}
+@list l2:level7
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0B7;
+  mso-level-tab-stop:288.0pt;
+  mso-level-number-position:left;
+  margin-left:288.0pt;
+  text-indent:-18.0pt;
+  font-family:Symbol;}
+@list l2:level8
+  {mso-level-number-format:bullet;
+  mso-level-text:o;
+  mso-level-tab-stop:324.0pt;
+  mso-level-number-position:left;
+  margin-left:324.0pt;
+  text-indent:-18.0pt;
+  font-family:"Courier New";
+  mso-bidi-font-family:"Times New Roman";}
+@list l2:level9
+  {mso-level-number-format:bullet;
+  mso-level-text:\F0A7;
+  mso-level-tab-stop:360.0pt;
+  mso-level-number-position:left;
+  margin-left:360.0pt;
+  text-indent:-18.0pt;
+  font-family:Wingdings;}
+ol
+  {margin-bottom:0cm;}
+ul
+  {margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground">
+    <tr>
+      <td width="13%" rowspan=3 align="center">
+        <img src="../Оболочка/images/logo_new.png" width=117 align="middle" alt="Логотип БГУИР">
+      </td>
+      <tr>
+        <td width="70%" colspan=2 align="center" valign="middle">
+          <h1 align="center">Электронный учебно-методический комплекс по учебной дисциплине
+            <br> "Теория вероятностей и математическая статистика"
+            <br> для специальности: </h1>
+          310304 «Информатика»</td>
+        <td width="12%" rowspan=3 align="center">&nbsp;</td>
+        <tr>
+          <td align=center colspan=2>
+            <var class="normal">
+              <a href="../index.htm">Оглавление</a> |
+              <a href="../Программа/program.htm">Программа</a> |
+              <a href="../Теория/theory.htm">Теория</a> |
+              <a href="practice.htm">Практика</a> |
+              <a href="../Контроль_знаний/test.htm">Контроль знаний</a> |
+              <a href="../Об авторах/author.htm">Об авторах</a>
+            </var>
+          </td>
+        </tr>
+  </table>
+
+  <div class=WordSection1>
+    <p></p>
+
+<h1><i style='mso-bidi-font-style:normal'><span style='font-family:"Arial","sans-serif"'>ЗАДАНИЕ
+1 <o:p></o:p></span></i></h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2 style='text-indent:27.0pt'><b><span style='font-size:12.0pt'>Тема: <span
+style='mso-spacerun:yes'> </span>Основные понятия математической статистики.
+Вариационный ряд. Эмпирическая<span style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'> </span>функция распределения.<o:p></o:p></span></b></h2>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt'>Продолжительность
+занятия – 4 часа.<o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='text-align:justify;mso-list:l1 level1 lfo1;
+     tab-stops:list 36.0pt'>По заданию 5.<span lang=EN-US style='mso-ansi-language:
+     EN-US'>k</span> типового расчета (часть 1) сформировать выборку случайных
+     величин <span lang=EN-US style='mso-ansi-language:EN-US'>Y<sub>i</sub></span>=&#966;(<span
+     lang=EN-US style='mso-ansi-language:EN-US'>x<sub>i</sub></span>), где <span
+     lang=EN-US style='mso-ansi-language:EN-US'>X<sub>i</sub></span> –
+     равномерно распределенное число из интервала [<span lang=EN-US
+     style='mso-ansi-language:EN-US'>a</span>,<span lang=EN-US
+     style='mso-ansi-language:EN-US'>b</span>], <span lang=EN-US
+     style='mso-ansi-language:EN-US'>I</span> = 1, …, <span lang=EN-US
+     style='mso-ansi-language:EN-US'>n</span>.<o:p></o:p></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify'>Величина <i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>n</span></i> задается.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify'>Для этого:<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Определить параметры равномерного распределения
+(если они не даны в условии задачи в явном виде).<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Сформировать программными средствами равномерно
+распределенное число &#958;<span class=SpellE><sub><span lang=EN-US
+style='mso-ansi-language:EN-US'>i</span></sub></span> из интервала [0,1].<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Преобразовать число &#958;<span class=SpellE><sub><span
+lang=EN-US style='mso-ansi-language:EN-US'>i</span></sub></span> в число <span
+lang=EN-US style='mso-ansi-language:EN-US'>X<sub>i</sub></span>, имеющее
+равномерное распределение из требуемого интервала [<span lang=EN-US
+style='mso-ansi-language:EN-US'>a</span>,<span lang=EN-US style='mso-ansi-language:
+EN-US'>b</span>] по формуле:<o:p></o:p></p>
+
+<p class=MsoNormal align=center style='margin-left:36.0pt;text-align:center'><span
+lang=EN-US style='mso-ansi-language:EN-US'><span style='position:relative;
+mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:112.8pt;
+ height:19.2pt' o:ole="">
+ <v:imagedata src="task1.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=188 height=32
+src="task1.files/image002.png" v:shapes="_x0000_i1025"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1496188009">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l2 level1 lfo3;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Получить случайное число <span lang=EN-US
+style='mso-ansi-language:EN-US'>Y<sub>i</sub></span>=&#966;(<span lang=EN-US
+style='mso-ansi-language:EN-US'>X<sub>i</sub></span>).<o:p></o:p></p>
+
+<ol style='margin-top:0cm' start=2 type=1>
+ <li class=MsoNormal style='text-align:justify;mso-list:l1 level1 lfo1;
+     tab-stops:list 36.0pt'>Для полученной случайной величины построить
+     вариационный ряд, эмпирическую функцию распределения <span class=GramE>СВ</span>
+     <span lang=EN-US style='mso-ansi-language:EN-US'>Y</span>. Результаты
+     представить в виде таблицы и графика.<o:p></o:p></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l1 level1 lfo1;
+     tab-stops:list 36.0pt'>Найти теоретически функцию распределения <span
+     class=GramE>СВ</span> <span lang=EN-US style='mso-ansi-language:EN-US'>Y</span>.<span
+     style='mso-spacerun:yes'>  </span>Результаты представить в аналитическом
+     виде и в виде графика. <o:p></o:p></li>
+</ol>
+
+<p class=MsoNormal>Сравнить полученные результаты, представив графики
+теоретической и эмпирической функций распределения в одном окне.</p>
+<p></p>
+</div>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground tableBottom">
+    <tr>
+      <td align=center>
+        <var>
+          <b>&copy; БГУИР</b>
+        </var>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

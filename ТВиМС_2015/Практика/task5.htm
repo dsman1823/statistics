@@ -1,0 +1,747 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//RU">
+<!-- (c) 2015 Pankratov Anton & Arabadzhi Bogdan, BSUIR -->
+<html>
+
+<head>
+  <link rel=stylesheet href="../Оболочка/css/style.css" type="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="ru">
+  <title>Практика по дисциплине &quot;Теория вероятностей и математическая статистика&quot;</title>
+  <base target="_top">
+
+  <style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:"";
+  margin:0cm;
+  margin-bottom:.0001pt;
+  mso-pagination:widow-orphan;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";}
+h1
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-link:"Заголовок 1 Знак";
+  mso-style-next:Обычный;
+  margin:0cm;
+  margin-bottom:.0001pt;
+  mso-pagination:widow-orphan;
+  page-break-after:avoid;
+  mso-outline-level:1;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  mso-font-kerning:0pt;}
+h2
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-link:"Заголовок 2 Знак";
+  mso-style-next:Обычный;
+  margin:0cm;
+  margin-bottom:.0001pt;
+  text-align:justify;
+  mso-pagination:widow-orphan;
+  page-break-after:avoid;
+  mso-outline-level:2;
+  font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  font-weight:normal;
+  font-style:italic;}
+h3
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-link:"Заголовок 3 Знак";
+  mso-style-next:Обычный;
+  margin-top:12.0pt;
+  margin-right:0cm;
+  margin-bottom:3.0pt;
+  margin-left:0cm;
+  mso-pagination:widow-orphan;
+  page-break-after:avoid;
+  mso-outline-level:3;
+  font-size:13.0pt;
+  font-family:"Arial","sans-serif";
+  mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+  {mso-style-unhide:no;
+  mso-style-link:"Основной текст с отступом 2 Знак";
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:0cm;
+  margin-left:18.0pt;
+  margin-bottom:.0001pt;
+  text-align:justify;
+  text-indent:-18.0pt;
+  mso-pagination:widow-orphan;
+  font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  font-style:italic;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+  {mso-style-priority:34;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:0cm;
+  margin-left:36.0pt;
+  margin-bottom:.0001pt;
+  mso-add-space:auto;
+  mso-pagination:widow-orphan;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+  {mso-style-priority:34;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-type:export-only;
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:0cm;
+  margin-left:36.0pt;
+  margin-bottom:.0001pt;
+  mso-add-space:auto;
+  mso-pagination:widow-orphan;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+  {mso-style-priority:34;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-type:export-only;
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:0cm;
+  margin-left:36.0pt;
+  margin-bottom:.0001pt;
+  mso-add-space:auto;
+  mso-pagination:widow-orphan;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+  {mso-style-priority:34;
+  mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-type:export-only;
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:0cm;
+  margin-left:36.0pt;
+  margin-bottom:.0001pt;
+  mso-add-space:auto;
+  mso-pagination:widow-orphan;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";}
+span.1
+  {mso-style-name:"Заголовок 1 Знак";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Заголовок 1";
+  mso-ansi-font-size:12.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-weight:bold;}
+span.2
+  {mso-style-name:"Заголовок 2 Знак";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Заголовок 2";
+  mso-ansi-font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-style:italic;}
+span.3
+  {mso-style-name:"Заголовок 3 Знак";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Заголовок 3";
+  mso-ansi-font-size:13.0pt;
+  mso-bidi-font-size:13.0pt;
+  font-family:"Arial","sans-serif";
+  mso-ascii-font-family:Arial;
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Arial;
+  mso-bidi-font-family:Arial;
+  mso-fareast-language:RU;
+  font-weight:bold;}
+span.20
+  {mso-style-name:"Основной текст с отступом 2 Знак";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Основной текст с отступом 2";
+  mso-ansi-font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-style:italic;}
+span.SpellE
+  {mso-style-name:"";
+  mso-spl-e:yes;}
+.MsoChpDefault
+  {mso-style-type:export-only;
+  mso-default-props:yes;
+  mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:Calibri;
+  mso-fareast-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi;
+  mso-fareast-language:EN-US;}
+.MsoPapDefault
+  {mso-style-type:export-only;
+  margin-bottom:10.0pt;
+  line-height:115%;}
+@page WordSection1
+  {size:595.3pt 841.9pt;
+  margin:2.0cm 42.5pt 2.0cm 3.0cm;
+  mso-header-margin:35.4pt;
+  mso-footer-margin:35.4pt;
+  mso-paper-source:0;}
+div.WordSection1
+  {page:WordSection1;}
+ /* List Definitions */
+ @list l0
+  {mso-list-id:156267661;
+  mso-list-template-ids:739535040;}
+@list l0:level1
+  {mso-level-text:%1;
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:18.0pt;
+  text-indent:-18.0pt;}
+@list l0:level2
+  {mso-level-text:"%1\.%2";
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:18.0pt;
+  text-indent:-18.0pt;}
+@list l0:level3
+  {mso-level-text:"%1\.%2\.%3";
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:36.0pt;
+  text-indent:-36.0pt;}
+@list l0:level4
+  {mso-level-text:"%1\.%2\.%3\.%4";
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:36.0pt;
+  text-indent:-36.0pt;}
+@list l0:level5
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5";
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:54.0pt;
+  text-indent:-54.0pt;}
+@list l0:level6
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:54.0pt;
+  text-indent:-54.0pt;}
+@list l0:level7
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:72.0pt;
+  text-indent:-72.0pt;}
+@list l0:level8
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:72.0pt;
+  text-indent:-72.0pt;}
+@list l0:level9
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+  mso-level-tab-stop:none;
+  mso-level-number-position:left;
+  margin-left:90.0pt;
+  text-indent:-90.0pt;}
+@list l1
+  {mso-list-id:839929158;
+  mso-list-template-ids:-1760415846;}
+@list l1:level1
+  {mso-level-start-at:2;
+  mso-level-tab-stop:21.0pt;
+  mso-level-number-position:left;
+  margin-left:21.0pt;
+  text-indent:-21.0pt;}
+@list l1:level2
+  {mso-level-start-at:2;
+  mso-level-text:"1\.%2";
+  mso-level-tab-stop:54.0pt;
+  mso-level-number-position:left;
+  margin-left:54.0pt;
+  text-indent:-36.0pt;
+  mso-ansi-font-size:12.0pt;}
+@list l1:level3
+  {mso-level-text:"%1\.%2\.%3\.";
+  mso-level-tab-stop:72.0pt;
+  mso-level-number-position:left;
+  margin-left:72.0pt;
+  text-indent:-36.0pt;}
+@list l1:level4
+  {mso-level-text:"%1\.%2\.%3\.%4\.";
+  mso-level-tab-stop:108.0pt;
+  mso-level-number-position:left;
+  margin-left:108.0pt;
+  text-indent:-54.0pt;}
+@list l1:level5
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+  mso-level-tab-stop:126.0pt;
+  mso-level-number-position:left;
+  margin-left:126.0pt;
+  text-indent:-54.0pt;}
+@list l1:level6
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+  mso-level-tab-stop:162.0pt;
+  mso-level-number-position:left;
+  margin-left:162.0pt;
+  text-indent:-72.0pt;}
+@list l1:level7
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+  mso-level-tab-stop:198.0pt;
+  mso-level-number-position:left;
+  margin-left:198.0pt;
+  text-indent:-90.0pt;}
+@list l1:level8
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+  mso-level-tab-stop:216.0pt;
+  mso-level-number-position:left;
+  margin-left:216.0pt;
+  text-indent:-90.0pt;}
+@list l1:level9
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+  mso-level-tab-stop:252.0pt;
+  mso-level-number-position:left;
+  margin-left:252.0pt;
+  text-indent:-108.0pt;}
+@list l2
+  {mso-list-id:890774535;
+  mso-list-template-ids:1855327078;}
+@list l2:level1
+  {mso-level-start-at:2;
+  mso-level-tab-stop:21.0pt;
+  mso-level-number-position:left;
+  margin-left:21.0pt;
+  text-indent:-21.0pt;}
+@list l2:level2
+  {mso-level-text:"%1\.%2\.";
+  mso-level-tab-stop:54.0pt;
+  mso-level-number-position:left;
+  margin-left:54.0pt;
+  text-indent:-36.0pt;
+  mso-ansi-font-size:12.0pt;}
+@list l2:level3
+  {mso-level-text:"%1\.%2\.%3\.";
+  mso-level-tab-stop:72.0pt;
+  mso-level-number-position:left;
+  margin-left:72.0pt;
+  text-indent:-36.0pt;}
+@list l2:level4
+  {mso-level-text:"%1\.%2\.%3\.%4\.";
+  mso-level-tab-stop:108.0pt;
+  mso-level-number-position:left;
+  margin-left:108.0pt;
+  text-indent:-54.0pt;}
+@list l2:level5
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+  mso-level-tab-stop:126.0pt;
+  mso-level-number-position:left;
+  margin-left:126.0pt;
+  text-indent:-54.0pt;}
+@list l2:level6
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+  mso-level-tab-stop:162.0pt;
+  mso-level-number-position:left;
+  margin-left:162.0pt;
+  text-indent:-72.0pt;}
+@list l2:level7
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+  mso-level-tab-stop:198.0pt;
+  mso-level-number-position:left;
+  margin-left:198.0pt;
+  text-indent:-90.0pt;}
+@list l2:level8
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+  mso-level-tab-stop:216.0pt;
+  mso-level-number-position:left;
+  margin-left:216.0pt;
+  text-indent:-90.0pt;}
+@list l2:level9
+  {mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+  mso-level-tab-stop:252.0pt;
+  mso-level-number-position:left;
+  margin-left:252.0pt;
+  text-indent:-108.0pt;}
+@list l3
+  {mso-list-id:1111169355;
+  mso-list-type:hybrid;
+  mso-list-template-ids:-1117892996 -1123511720 -596373314 -292811646 1026603694 951462396 932726228 1377892082 933501802 207771548;}
+@list l3:level1
+  {mso-level-tab-stop:36.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l3:level2
+  {mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l3:level3
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l3:level4
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l3:level5
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l3:level6
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l3:level7
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l3:level8
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l3:level9
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l4
+  {mso-list-id:1300451172;
+  mso-list-type:hybrid;
+  mso-list-template-ids:-1117892996 -1123511720 -596373314 -292811646 1026603694 951462396 932726228 1377892082 933501802 207771548;}
+@list l4:level1
+  {mso-level-tab-stop:36.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l4:level2
+  {mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l4:level3
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l4:level4
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l4:level5
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l4:level6
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l4:level7
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l4:level8
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+@list l4:level9
+  {mso-level-start-at:0;
+  mso-level-number-format:none;
+  mso-level-text:"";
+  mso-level-tab-stop:18.0pt;
+  mso-level-number-position:left;
+  margin-left:0cm;
+  text-indent:0cm;}
+ol
+  {margin-bottom:0cm;}
+ul
+  {margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground">
+    <tr>
+      <td width="13%" rowspan=3 align="center">
+        <img src="../Оболочка/images/logo_new.png" width=117 align="middle" alt="Логотип БГУИР">
+      </td>
+      <tr>
+        <td width="70%" colspan=2 align="center" valign="middle">
+          <h1 align="center">Электронный учебно-методический комплекс по учебной дисциплине
+            <br> "Теория вероятностей и математическая статистика"
+            <br> для специальности: </h1>
+          310304 «Информатика»</td>
+        <td width="12%" rowspan=3 align="center">&nbsp;</td>
+        <tr>
+          <td align=center colspan=2>
+            <var class="normal">
+              <a href="../index.htm">Оглавление</a> |
+              <a href="../Программа/program.htm">Программа</a> |
+              <a href="../Теория/theory.htm">Теория</a> |
+              <a href="practice.htm">Практика</a> |
+              <a href="../Контроль_знаний/test.htm">Контроль знаний</a> |
+              <a href="../Об авторах/author.htm">Об авторах</a>
+            </var>
+          </td>
+        </tr>
+  </table>
+
+  <div class=WordSection1>
+<p></p>
+<h1><i><span style='font-family:"Arial","sans-serif";mso-bidi-font-family:"Times New Roman"'>ЗАДАНИЕ
+5 <o:p></o:p></span></i></h1>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<h2 style='text-indent:27.0pt'><b><u><span style='font-size:12.0pt'>Тема.</span></u></b><b><span
+style='font-size:12.0pt'> Интервальные оценки <o:p></o:p></span></b></h2>
+
+<p class=MsoBodyTextIndent2 style='margin-left:0cm;text-indent:27.0pt'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt'>Продолжительность
+занятия – 4 часа<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></b></p>
+
+<h3><u><span style='font-size:12.0pt'>1</span></u><u><span style='font-size:
+12.0pt;font-family:"Times New Roman","serif"'>. Доверительный интервал для
+математического ожидания СВ.<o:p></o:p></span></u></h3>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>В соответствии с вариантом (см. задание 1) сформировать
+выборку из 20 случайных чисел. Найти точечную оценку математического ожидания
+случайной величины. <o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Найти точечную оценку дисперсии случайной величины.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Найти доверительный интервал для оценки математического
+ожидания случайной величины для различных уровней значимости.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Построить график зависимости величины доверительного
+интервала от уровня значимости.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Найти теоретическое <span
+style='mso-spacerun:yes'> </span>значение дисперсии случайной величины по известной
+плотности распределения (задание 2, п.3).<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Найти доверительный интервал для оценки математического
+ожидания случайной величины при известной дисперсии для различных уровней
+значимости.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Построить график зависимости величины доверительного
+интервала от уровня значимости.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Сравнить результаты, полученные по <span class=SpellE>п.п</span>.
+1.4, 1.7.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Повторить <span class=SpellE>п.п</span>. 1.2 – 1.8. для
+различного объема выборки: <span lang=EN-US style='mso-ansi-language:EN-US'>n</span>
+= 30, 50, 70, 100, 150.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l1 level2 lfo4;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Построить графики зависимости величины доверительного
+интервала от объема выборки.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></p>
+
+<h3><u><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-bidi-font-family:Arial'>2. Доверительный интервал для дисперсии СВ.<o:p></o:p></span></u></h3>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>В соответствии с вариантом (см. задание 1) сформировать
+выборку из 20 случайных чисел. Найти точечную оценку дисперсии случайной
+величины. <o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Найти точечную оценку математического ожидания
+случайной величины.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Найти доверительный интервал для оценки дисперсии
+случайной величины для различных уровней значимости.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Построить график зависимости величины доверительного
+интервала от уровня значимости.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Найти теоретическое значение математического ожидания
+случайной величины по известной плотности распределения (задание 2, п.3).<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Найти доверительный интервал для оценки дисперсии
+случайной величины при известном математическом ожидании для различных уровней
+значимости.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Построить график зависимости величины доверительного
+интервала от уровня значимости.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Сравнить результаты, полученные по <span class=SpellE>п.п</span>.
+2.4, 2.7.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Повторить <span class=SpellE>п.п</span>. 2.2 – 2.8 <span
+style='mso-spacerun:yes'> </span>для различного объема выборки: <span
+lang=EN-US style='mso-ansi-language:EN-US'>n</span> = 30, 50, 70, 100, 150.<o:p></o:p></p>
+
+<p class=MsoListParagraph style='margin-left:54.0pt;mso-add-space:auto;
+text-indent:-36.0pt;mso-list:l2 level2 lfo2;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Построить графики зависимости величины доверительного
+интервала от объема выборки.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground tableBottom">
+    <tr>
+      <td align=center>
+        <var>
+          <b>&copy; БГУИР</b>
+        </var>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

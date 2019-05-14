@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//RU">
+<!-- (c) 2015 Pankratov Anton & Arabadzhi Bogdan, BSUIR -->
+<html>
+
+<head>
+  <link rel=stylesheet href="../Оболочка/css/style.css" type="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="ru">
+  <title>Практика по дисциплине &quot;Теория вероятностей и математическая статистика&quot;</title>
+  <base target="_top">
+
+  <script type="text/javascript" src="../Оболочка/scripts/MathJax/MathJax.js?config=default"></script>
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+    });
+  </script>
+</head>
+
+<body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground">
+    <tr>
+      <td width="13%" rowspan=3 align="center">
+        <img src="../Оболочка/images/logo_new.png" width=117 align="middle" alt="Логотип БГУИР">
+      </td>
+      <tr>
+        <td width="70%" colspan=2 align="center" valign="middle">
+          <h1 align="center">Электронный учебно-методический комплекс по учебной дисциплине
+            <br> "Теория вероятностей и математическая статистика"
+            <br> для специальности: </h1>
+          310304 «Информатика»</td>
+        <td width="12%" rowspan=3 align="center">&nbsp;</td>
+        <tr>
+          <td align=center colspan=2>
+            <var class="normal">
+              <a href="../index.htm">Оглавление</a> |
+              <a href="../Программа/program.htm">Программа</a> |
+              <a href="../Теория/theory.htm">Теория</a> |
+              <a href="../Практика/practice.htm">Практика</a> |
+              <a href="../Контроль_знаний/test.htm">Контроль знаний</a> |
+              <a href="../Об авторах/author.htm">Об авторах</a>
+            </var>
+          </td>
+        </tr>
+  </table>
+
+  <br>
+
+  <div class="margined">
+    <div>
+      <ol>
+        <li>
+          Случайная величина \(X\) принимает значения \(X=n, (n=1,2,…)\) с вероятностью \(P \{X = n \} = 2^{-n}\). Найти функцию \(F(x)\) и вычислить \(P\{3\leqslant x \leqslant 6\}\).
+          <div class="em_wrap"><em>(Ответ: \(F(x)=\sum\limits_{i < x} 2^{-i}; P\{3\leqslant x \leqslant 6\} = 0.2344\))</em></div>
+        </li>
+        <li>
+          По двоичному каналу связи с помехами передаются две цифры 1 и 0. Априорные вероятности передачи этих цифр равны \(p(1)=p(0)=0,5\). Из-за наличии помех возможны искажения. Вероятности перехода единицы в единицу и нуля в нуль соответственно равны \(p(1/1)=p, p(0/0)=q\). Определить закон распределения вероятностей случайной величины \(X\) – однозначного числа, которое будет получено на приемной стороне:
+          <div class="em_wrap"><em>(Ответ:  \( P\{X=0\}=(1-p+q)/2\), \(P\{X=1\}=(1-q+p)/2 \))</em></div>
+        </li>
+        <li>
+          Случайная величина \(X\) имеет следующую плотность вероятностей:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( f(x) = \begin{cases}
+           x-\frac{a}{4}x^3, 0\leqslant x\leqslant 2 \\
+           0, x\not\in[0,2]
+           \end{cases}
+           \)
+          <br>
+          Определить \(a\), медиану величины \(X\) и функцию распределения \(F(x)\).
+        </li>
+        <li>
+          Случайная величина X имеет следующую плотность вероятностей:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( f(x) = \begin{cases}
+           0.5x-a, 2\leqslant x\leqslant 4 \\
+           0, x\not\in[2,4]
+           \end{cases}
+           \)
+          <br>
+          Вычислить \(a\) и вероятности \(p(X < 0,2)\), \(p(X < 3)\),  \(p(X \geqslant 3)\), \(p(X \geqslant 5)\).
+        </li>
+        <li>
+          Случайная величина \(X\) имеет следующую функцию распределения:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( F(x) = \begin{cases}
+           0, x\leqslant 0 \\
+           a\sin 2x, 0 < x \leqslant \pi/4 \\
+           1, x>\pi/4
+           \end{cases}
+           \)
+          <br>
+          Определить \(a\), плотность вероятностей \(f(x)\) и значение \(f(\pi/4)\).
+        </li>
+        <li>
+          <div style="float:left;width:70%">Дан график плотности вероятностей случайной величины \(X\):<br> Записать \(f(x)\) в аналитической форме, определить функцию распределения \(F(x)\) и \(p(X < -0.5)\).
+          </div>
+          <div style="float:right;width:30%">
+            <img src="images/5.6.jpg" style="max-height:80px;">
+          </div>
+          <div class="clearfix"></div>
+        </li>
+        <li>
+          Случайная величина X имеет следующую функцию распределения:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( F(x) = \begin{cases}
+           0, x\leqslant 0 \\
+           a x^3, 0 < x \leqslant 2 \\
+           1, x>2
+           \end{cases}
+           \)
+          <br>
+          Определить \(a\), плотность вероятностей \(f(x)\), вычислить вероятность \(p(0 < x < 1.5)\).
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground tableBottom">
+    <tr>
+      <td align=center>
+        <var>
+          <b>&copy; БГУИР</b>
+        </var>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

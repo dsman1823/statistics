@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//RU">
+<!-- (c) 2015 Pankratov Anton & Arabadzhi Bogdan, BSUIR -->
+<html>
+
+<head>
+  <link rel=stylesheet href="../Оболочка/css/style.css" type="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="ru">
+  <title>Практика по дисциплине &quot;Теория вероятностей и математическая статистика&quot;</title>
+  <base target="_top">
+
+  <style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:"";
+  margin:0cm;
+  margin-bottom:.0001pt;
+  mso-pagination:widow-orphan;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";}
+h1
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-link:"Заголовок 1 Знак";
+  mso-style-next:Обычный;
+  margin:0cm;
+  margin-bottom:.0001pt;
+  mso-pagination:widow-orphan;
+  page-break-after:avoid;
+  mso-outline-level:1;
+  font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  mso-font-kerning:0pt;}
+h2
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-link:"Заголовок 2 Знак";
+  mso-style-next:Обычный;
+  margin:0cm;
+  margin-bottom:.0001pt;
+  text-align:justify;
+  mso-pagination:widow-orphan;
+  page-break-after:avoid;
+  mso-outline-level:2;
+  font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  font-weight:normal;
+  font-style:italic;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+  {mso-style-unhide:no;
+  mso-style-link:"Основной текст с отступом Знак";
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:0cm;
+  margin-left:36.0pt;
+  margin-bottom:.0001pt;
+  text-align:justify;
+  text-indent:-18.0pt;
+  mso-pagination:widow-orphan;
+  font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+  {mso-style-unhide:no;
+  mso-style-link:"Основной текст с отступом 2 Знак";
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:0cm;
+  margin-left:18.0pt;
+  margin-bottom:.0001pt;
+  text-align:justify;
+  text-indent:-18.0pt;
+  mso-pagination:widow-orphan;
+  font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";
+  font-style:italic;}
+span.1
+  {mso-style-name:"Заголовок 1 Знак";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Заголовок 1";
+  mso-ansi-font-size:12.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-weight:bold;}
+span.2
+  {mso-style-name:"Заголовок 2 Знак";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Заголовок 2";
+  mso-ansi-font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-style:italic;}
+span.a
+  {mso-style-name:"Основной текст с отступом Знак";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Основной текст с отступом";
+  mso-ansi-font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;}
+span.20
+  {mso-style-name:"Основной текст с отступом 2 Знак";
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Основной текст с отступом 2";
+  mso-ansi-font-size:14.0pt;
+  mso-bidi-font-size:12.0pt;
+  font-family:"Times New Roman","serif";
+  mso-ascii-font-family:"Times New Roman";
+  mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";
+  mso-fareast-language:RU;
+  font-style:italic;}
+span.SpellE
+  {mso-style-name:"";
+  mso-spl-e:yes;}
+.MsoChpDefault
+  {mso-style-type:export-only;
+  mso-default-props:yes;
+  font-family:"Calibri","sans-serif";
+  mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:Calibri;
+  mso-fareast-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi;
+  mso-fareast-language:EN-US;}
+.MsoPapDefault
+  {mso-style-type:export-only;
+  margin-bottom:10.0pt;
+  line-height:115%;}
+@page WordSection1
+  {size:595.3pt 841.9pt;
+  margin:2.0cm 42.5pt 2.0cm 3.0cm;
+  mso-header-margin:35.4pt;
+  mso-footer-margin:35.4pt;
+  mso-paper-source:0;}
+div.WordSection1
+  {page:WordSection1;}
+ /* List Definitions */
+ @list l0
+  {mso-list-id:804860357;
+  mso-list-type:hybrid;
+  mso-list-template-ids:-588904936 68747279 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+  {mso-level-tab-stop:36.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l0:level2
+  {mso-level-number-format:alpha-lower;
+  mso-level-tab-stop:72.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l0:level3
+  {mso-level-number-format:roman-lower;
+  mso-level-tab-stop:108.0pt;
+  mso-level-number-position:right;
+  text-indent:-9.0pt;}
+@list l0:level4
+  {mso-level-tab-stop:144.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l0:level5
+  {mso-level-number-format:alpha-lower;
+  mso-level-tab-stop:180.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l0:level6
+  {mso-level-number-format:roman-lower;
+  mso-level-tab-stop:216.0pt;
+  mso-level-number-position:right;
+  text-indent:-9.0pt;}
+@list l0:level7
+  {mso-level-tab-stop:252.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l0:level8
+  {mso-level-number-format:alpha-lower;
+  mso-level-tab-stop:288.0pt;
+  mso-level-number-position:left;
+  text-indent:-18.0pt;}
+@list l0:level9
+  {mso-level-number-format:roman-lower;
+  mso-level-tab-stop:324.0pt;
+  mso-level-number-position:right;
+  text-indent:-9.0pt;}
+ol
+  {margin-bottom:0cm;}
+ul
+  {margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground">
+    <tr>
+      <td width="13%" rowspan=3 align="center">
+        <img src="../Оболочка/images/logo_new.png" width=117 align="middle" alt="Логотип БГУИР">
+      </td>
+      <tr>
+        <td width="70%" colspan=2 align="center" valign="middle">
+          <h1 align="center">Электронный учебно-методический комплекс по учебной дисциплине
+            <br> "Теория вероятностей и математическая статистика"
+            <br> для специальности: </h1>
+          310304 «Информатика»</td>
+        <td width="12%" rowspan=3 align="center">&nbsp;</td>
+        <tr>
+          <td align=center colspan=2>
+            <var class="normal">
+              <a href="../index.htm">Оглавление</a> |
+              <a href="../Программа/program.htm">Программа</a> |
+              <a href="../Теория/theory.htm">Теория</a> |
+              <a href="practice.htm">Практика</a> |
+              <a href="../Контроль_знаний/test.htm">Контроль знаний</a> |
+              <a href="../Об авторах/author.htm">Об авторах</a>
+            </var>
+          </td>
+        </tr>
+  </table>
+
+  <div class=WordSection1>
+<p></p>
+<h1><i><span style='font-family:"Arial","sans-serif";mso-bidi-font-family:"Times New Roman"'>ЗАДАНИЕ
+4 <o:p></o:p></span></i></h1>
+
+<p class=MsoBodyTextIndent><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='text-indent:27.0pt'><b><u><span style='font-size:12.0pt;mso-bidi-font-style:
+normal'>Тема.</span></u></b><b><span style='font-size:12.0pt;mso-bidi-font-style:
+normal'> Проверка статистических гипотез о виде закона распределения.<o:p></o:p></span></b></h2>
+
+<p class=MsoBodyTextIndent2 style='margin-left:0cm;text-indent:27.0pt'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt'>Продолжительность
+занятия – 4 часа<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify'><o:p>&nbsp;</o:p></p>
+
+
+
+<ol style='margin-top:0cm' start=1 type=1>
+  <li class=MsoNormal>В соответствии с вариантом (см. задание 1)
+сформировать выборку из 200 случайных чисел. Проверить гипотезу о соответствии
+выборке теоретическому закону распределения по критерию согласия Присона.</li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l0 level1 lfo1;
+     tab-stops:list 36.0pt'>В соответствии с вариантом (см. задание 1)
+     сформировать выборку из 30 случайных чисел. Проверить гипотезу о
+     соответствии выборке теоретическому закону распределения по критерию
+     согласия Колмогорова.<o:p></o:p></li>
+ <li class=MsoNormal style='text-align:justify;mso-list:l0 level1 lfo1;
+     tab-stops:list 36.0pt'>В соответствии с вариантом (см. задание 1)
+     сформировать выборку из 50 случайных чисел. Проверить гипотезу о
+     соответствии выборке теоретическому закону распределения по критерию
+     согласия <span class=SpellE>Мизеса</span>.</li>
+</ol>
+<p></p>
+</div>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground tableBottom">
+    <tr>
+      <td align=center>
+        <var>
+          <b>&copy; БГУИР</b>
+        </var>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

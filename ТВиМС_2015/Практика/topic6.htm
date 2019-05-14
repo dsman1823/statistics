@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//RU">
+<!-- (c) 2015 Pankratov Anton & Arabadzhi Bogdan, BSUIR -->
+<html>
+
+<head>
+  <link rel=stylesheet href="../Оболочка/css/style.css" type="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="ru">
+  <title>Практика по дисциплине &quot;Теория вероятностей и математическая статистика&quot;</title>
+  <base target="_top">
+
+  <script type="text/javascript" src="../Оболочка/scripts/MathJax/MathJax.js?config=default"></script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+    });
+  </script>
+</head>
+
+<body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground">
+    <tr>
+      <td width="13%" rowspan=3 align="center">
+        <img src="../Оболочка/images/logo_new.png" width=117 align="middle" alt="Логотип БГУИР">
+      </td>
+      <tr>
+        <td width="70%" colspan=2 align="center" valign="middle">
+          <h1 align="center">Электронный учебно-методический комплекс по учебной дисциплине
+            <br> "Теория вероятностей и математическая статистика"
+            <br> для специальности: </h1>
+          310304 «Информатика»</td>
+        <td width="12%" rowspan=3 align="center">&nbsp;</td>
+        <tr>
+          <td align=center colspan=2>
+            <var class="normal">
+              <a href="../index.htm">Оглавление</a> |
+              <a href="../Программа/program.htm">Программа</a> |
+              <a href="../Теория/theory.htm">Теория</a> |
+              <a href="../Практика/practice.htm">Практика</a> |
+              <a href="../Контроль_знаний/test.htm">Контроль знаний</a> |
+              <a href="../Об авторах/author.htm">Об авторах</a>
+            </var>
+          </td>
+        </tr>
+  </table>
+
+  <br>
+
+  <div class="margined">
+    <div>
+      <ol>
+        <li>
+          Производятся три  выстрела по мишени. Вероятность поражения мишени первым выстрелом равна 0,4, вторым - 0,5, третьим - 0,6. СВ \(X\) - число поражений мишени.
+          <div class="em_wrap"><em>(Ответ: \(M(X)=1,5, D(X) =0,73.\))</em></div>
+        </li>
+        <li>
+          Вероятность сдачи данного экзамена для каждого из четырех студентов равна 0,8. СВ \(X\) - число студентов, сдавших экзамен.
+          <div class="em_wrap"><em>(Ответ: \(M(X)=3,2, D(X)=0,64\))</em></div>
+        </li>
+        <li>
+          Из партии в 20 изделий, среди которых имеется четыре нестандартных, для проверки качества выбраны случайным образом 3 изделия. СВ \(X\) - число нестандартных изделий среди проверяемых.
+          <div class="em_wrap"><em>(Ответ: \(M(X)=0,6, D(X)=0,48\))</em></div>
+        </li>
+        <li>
+          Вероятность отказа прибора за время испытания на надежность равна 0,2. СВ \(X\) - число приборов, отказавших в работе, среди пяти испытываемых.
+          <div class="em_wrap"><em>(Ответ: \(M(X)=1, D(X) = 0,9\))</em></div>
+        </li>
+        <li>
+          Вероятность выигрыша по одному билету лотереи равна 1/6. СВ \(X\) - число выигрышных билетов из четырех.
+          <div class="em_wrap"><em>(Ответ: \(M(X) = 2/3, D(X) = 5/9\))</em></div>
+        </li>
+        <li>
+          Проводятся три независимых измерения исследуемого образца. Вероятность допустить ошибку в каждом измерении равна 0,01. СВ \(X\) - число ошибок, допущенных в измерениях.
+          <div class="em_wrap"><em>(Ответ: \(M(X)= 0,03, D(X) = 0,0297\))</em></div>
+        </li>
+        <li>
+          Непрерывная случайная величина задана функцией распределения. Найти математическое ожидание случайной величины, дисперсию и вероятность попадания СВ \(X\) в интервал \(0 \leqslant X \leqslant 3\)
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( F(X) = \begin{cases}
+           0, x < 0 \\
+           \frac{1}{20}(x^2+x), 0 \leqslant x \leqslant 4, a=0, b=3 \\
+           1, x>4
+           \end{cases}
+           \)
+          <div class="em_wrap"><em>(Ответ: \(M(X)=2,53, D(X)=1,049, P(0 \leqslant X \leqslant 3 )=0,6\))</em></div>
+        </li>
+        <li>
+          Непрерывная случайная величина задана функцией распределения:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( F(x) = \begin{cases}
+           0, x\leqslant 0 \\
+           (x^3+x)/10, 0 \leqslant x < 2 \\
+           1, x \leqslant 2
+           \end{cases}
+          \)
+          <br>
+          Найти \( M[X], D[X], \delta_x \), квантиль 0,75, моду и медиану.
+          <div class="em_wrap"><em>(Ответ: \( M[X]=1,4; D[X]=0,22; \delta_x=0,469. \))</em></div>
+        </li>
+        <li>
+          Плотность распределения вероятностей величины Y имеет вид:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( f(y) = \begin{cases}
+           k y, 0 < y\leqslant 6 \\
+           0, y \leqslant 0, y > 6
+           \end{cases}
+          \)
+          <br>
+          Определить: а) постоянную \(k\) ; б) математическое ожидание СВ \(Y\) ; в) математическое ожидание квадрата СВ \(Y\).
+          <div class="em_wrap"><em>(Ответ: а) 1/18; б) 4; в) 18.)</em></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground tableBottom">
+    <tr>
+      <td align=center>
+        <var>
+          <b>&copy; БГУИР</b>
+        </var>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

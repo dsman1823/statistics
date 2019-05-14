@@ -1,0 +1,2894 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//RU">
+<!-- (c) 2015 Pankratov Anton & Arabadzhi Bogdan, BSUIR -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+  
+  <head>
+    <link rel=stylesheet href="../../Оболочка/css/style.css" type="text/css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-language" content="ru">
+    <title>Теория по дисциплине &quot;Теория вероятностей и математическая статистика&quot;</title>
+    <base target="_top">
+    <meta name=ProgId content=Word.Document>
+    <meta name=Generator content="Microsoft Word 14">
+    <meta name=Originator content="Microsoft Word 14">
+    <link rel=File-List href="8.files/filelist.xml">
+    <link rel=Edit-Time-Data href="8.files/editdata.mso">
+    <link rel=OLE-Object-Data href="8.files/oledata.mso">
+    <!--[if !mso]>
+      <style>
+        v\:* {behavior:url(#default#VML);}
+        o\:* {behavior:url(#default#VML);}
+        w\:* {behavior:url(#default#VML);}
+        .shape {behavior:url(#default#VML);}
+      </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:DocumentProperties>
+          <o:Author>Антон Панкратов</o:Author>
+          <o:LastAuthor>Антон Панкратов</o:LastAuthor>
+          <o:Revision>1</o:Revision>
+          <o:TotalTime>3</o:TotalTime>
+          <o:Created>2015-06-14T16:01:00Z</o:Created>
+          <o:LastSaved>2015-06-14T16:04:00Z</o:LastSaved>
+          <o:Pages>5</o:Pages>
+          <o:Words>968</o:Words>
+          <o:Characters>5524</o:Characters>
+          <o:Company>Krokoz™</o:Company>
+          <o:Lines>46</o:Lines>
+          <o:Paragraphs>12</o:Paragraphs>
+          <o:CharactersWithSpaces>6480</o:CharactersWithSpaces>
+          <o:Version>14.00</o:Version>
+        </o:DocumentProperties>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/></o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <link rel=themeData href="8.files/themedata.thmx">
+    <link rel=colorSchemeMapping href="8.files/colorschememapping.xml">
+    <!--[if gte mso 9]>
+      <xml>
+        <w:WordDocument>
+          <w:SpellingState>Clean</w:SpellingState>
+          <w:GrammarState>Clean</w:GrammarState>
+          <w:TrackMoves/>
+          <w:TrackFormatting/>
+          <w:PunctuationKerning/>
+          <w:ValidateAgainstSchemas/>
+          <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+          <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+          <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+          <w:DoNotPromoteQF/>
+          <w:LidThemeOther>RU</w:LidThemeOther>
+          <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+          <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+          <w:Compatibility>
+            <w:BreakWrappedTables/>
+            <w:SnapToGridInCell/>
+            <w:WrapTextWithPunct/>
+            <w:UseAsianBreakRules/>
+            <w:DontGrowAutofit/>
+            <w:SplitPgBreakAndParaMark/>
+            <w:EnableOpenTypeKerning/>
+            <w:DontFlipMirrorIndents/>
+            <w:OverrideTableStyleHps/></w:Compatibility>
+          <m:mathPr>
+            <m:mathFont m:val="Cambria Math" />
+            <m:brkBin m:val="before" />
+            <m:brkBinSub m:val="&#45;-" />
+            <m:smallFrac m:val="off" />
+            <m:dispDef/>
+            <m:lMargin m:val="0" />
+            <m:rMargin m:val="0" />
+            <m:defJc m:val="centerGroup" />
+            <m:wrapIndent m:val="1440" />
+            <m:intLim m:val="subSup" />
+            <m:naryLim m:val="undOvr" /></m:mathPr>
+        </w:WordDocument>
+      </xml>
+    <![endif]-->
+    <!--[if gte mso 9]>
+      <xml>
+        <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true" DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+        LatentStyleCount="267">
+          <w:LsdException Locked="false" Priority="0" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+          <w:LsdException Locked="false" Priority="9" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+          <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+          <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+          <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+          <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+          <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+          <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+          <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+          <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 1" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 2" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 3" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 4" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 5" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 6" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 7" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 8" />
+          <w:LsdException Locked="false" Priority="39" Name="toc 9" />
+          <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+          <w:LsdException Locked="false" Priority="10" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Title" />
+          <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+          <w:LsdException Locked="false" Priority="0" Name="Body Text Indent" />
+          <w:LsdException Locked="false" Priority="11" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+          <w:LsdException Locked="false" Priority="0" Name="Body Text 2" />
+          <w:LsdException Locked="false" Priority="22" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+          <w:LsdException Locked="false" Priority="20" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+          <w:LsdException Locked="false" Priority="59" SemiHidden="false" UnhideWhenUsed="false" Name="Table Grid" />
+          <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+          <w:LsdException Locked="false" Priority="1" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+          <w:LsdException Locked="false" Priority="60" SemiHidden="false" UnhideWhenUsed="false" Name="Light Shading" />
+          <w:LsdException Locked="false" Priority="61" SemiHidden="false" UnhideWhenUsed="false" Name="Light List" />
+          <w:LsdException Locked="false" Priority="62" SemiHidden="false" UnhideWhenUsed="false" Name="Light Grid" />
+          <w:LsdException Locked="false" Priority="63" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 1" />
+          <w:LsdException Locked="false" Priority="64" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 2" />
+          <w:LsdException Locked="false" Priority="65" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 1" />
+          <w:LsdException Locked="false" Priority="66" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 2" />
+          <w:LsdException Locked="false" Priority="67" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 1" />
+          <w:LsdException Locked="false" Priority="68" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 2" />
+          <w:LsdException Locked="false" Priority="69" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 3" />
+          <w:LsdException Locked="false" Priority="70" SemiHidden="false" UnhideWhenUsed="false" Name="Dark List" />
+          <w:LsdException Locked="false" Priority="71" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Shading" />
+          <w:LsdException Locked="false" Priority="72" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful List" />
+          <w:LsdException Locked="false" Priority="73" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Grid" />
+          <w:LsdException Locked="false" Priority="60" SemiHidden="false" UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+          <w:LsdException Locked="false" Priority="61" SemiHidden="false" UnhideWhenUsed="false" Name="Light List Accent 1" />
+          <w:LsdException Locked="false" Priority="62" SemiHidden="false" UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+          <w:LsdException Locked="false" Priority="63" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"
+          />
+          <w:LsdException Locked="false" Priority="64" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"
+          />
+          <w:LsdException Locked="false" Priority="65" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+          <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+          <w:LsdException Locked="false" Priority="34" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"
+          />
+          <w:LsdException Locked="false" Priority="29" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+          <w:LsdException Locked="false" Priority="30" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"
+          />
+          <w:LsdException Locked="false" Priority="66" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+          <w:LsdException Locked="false" Priority="67" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+          <w:LsdException Locked="false" Priority="68" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+          <w:LsdException Locked="false" Priority="69" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+          <w:LsdException Locked="false" Priority="70" SemiHidden="false" UnhideWhenUsed="false" Name="Dark List Accent 1" />
+          <w:LsdException Locked="false" Priority="71" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Shading Accent 1"
+          />
+          <w:LsdException Locked="false" Priority="72" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+          <w:LsdException Locked="false" Priority="73" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+          <w:LsdException Locked="false" Priority="60" SemiHidden="false" UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+          <w:LsdException Locked="false" Priority="61" SemiHidden="false" UnhideWhenUsed="false" Name="Light List Accent 2" />
+          <w:LsdException Locked="false" Priority="62" SemiHidden="false" UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+          <w:LsdException Locked="false" Priority="63" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"
+          />
+          <w:LsdException Locked="false" Priority="64" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"
+          />
+          <w:LsdException Locked="false" Priority="65" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+          <w:LsdException Locked="false" Priority="66" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+          <w:LsdException Locked="false" Priority="67" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+          <w:LsdException Locked="false" Priority="68" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+          <w:LsdException Locked="false" Priority="69" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+          <w:LsdException Locked="false" Priority="70" SemiHidden="false" UnhideWhenUsed="false" Name="Dark List Accent 2" />
+          <w:LsdException Locked="false" Priority="71" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Shading Accent 2"
+          />
+          <w:LsdException Locked="false" Priority="72" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+          <w:LsdException Locked="false" Priority="73" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+          <w:LsdException Locked="false" Priority="60" SemiHidden="false" UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+          <w:LsdException Locked="false" Priority="61" SemiHidden="false" UnhideWhenUsed="false" Name="Light List Accent 3" />
+          <w:LsdException Locked="false" Priority="62" SemiHidden="false" UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+          <w:LsdException Locked="false" Priority="63" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"
+          />
+          <w:LsdException Locked="false" Priority="64" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"
+          />
+          <w:LsdException Locked="false" Priority="65" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+          <w:LsdException Locked="false" Priority="66" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+          <w:LsdException Locked="false" Priority="67" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+          <w:LsdException Locked="false" Priority="68" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+          <w:LsdException Locked="false" Priority="69" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+          <w:LsdException Locked="false" Priority="70" SemiHidden="false" UnhideWhenUsed="false" Name="Dark List Accent 3" />
+          <w:LsdException Locked="false" Priority="71" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Shading Accent 3"
+          />
+          <w:LsdException Locked="false" Priority="72" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+          <w:LsdException Locked="false" Priority="73" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+          <w:LsdException Locked="false" Priority="60" SemiHidden="false" UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+          <w:LsdException Locked="false" Priority="61" SemiHidden="false" UnhideWhenUsed="false" Name="Light List Accent 4" />
+          <w:LsdException Locked="false" Priority="62" SemiHidden="false" UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+          <w:LsdException Locked="false" Priority="63" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"
+          />
+          <w:LsdException Locked="false" Priority="64" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"
+          />
+          <w:LsdException Locked="false" Priority="65" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+          <w:LsdException Locked="false" Priority="66" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+          <w:LsdException Locked="false" Priority="67" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+          <w:LsdException Locked="false" Priority="68" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+          <w:LsdException Locked="false" Priority="69" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+          <w:LsdException Locked="false" Priority="70" SemiHidden="false" UnhideWhenUsed="false" Name="Dark List Accent 4" />
+          <w:LsdException Locked="false" Priority="71" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Shading Accent 4"
+          />
+          <w:LsdException Locked="false" Priority="72" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+          <w:LsdException Locked="false" Priority="73" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+          <w:LsdException Locked="false" Priority="60" SemiHidden="false" UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+          <w:LsdException Locked="false" Priority="61" SemiHidden="false" UnhideWhenUsed="false" Name="Light List Accent 5" />
+          <w:LsdException Locked="false" Priority="62" SemiHidden="false" UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+          <w:LsdException Locked="false" Priority="63" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"
+          />
+          <w:LsdException Locked="false" Priority="64" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"
+          />
+          <w:LsdException Locked="false" Priority="65" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+          <w:LsdException Locked="false" Priority="66" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+          <w:LsdException Locked="false" Priority="67" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+          <w:LsdException Locked="false" Priority="68" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+          <w:LsdException Locked="false" Priority="69" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+          <w:LsdException Locked="false" Priority="70" SemiHidden="false" UnhideWhenUsed="false" Name="Dark List Accent 5" />
+          <w:LsdException Locked="false" Priority="71" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Shading Accent 5"
+          />
+          <w:LsdException Locked="false" Priority="72" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+          <w:LsdException Locked="false" Priority="73" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+          <w:LsdException Locked="false" Priority="60" SemiHidden="false" UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+          <w:LsdException Locked="false" Priority="61" SemiHidden="false" UnhideWhenUsed="false" Name="Light List Accent 6" />
+          <w:LsdException Locked="false" Priority="62" SemiHidden="false" UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+          <w:LsdException Locked="false" Priority="63" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"
+          />
+          <w:LsdException Locked="false" Priority="64" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"
+          />
+          <w:LsdException Locked="false" Priority="65" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+          <w:LsdException Locked="false" Priority="66" SemiHidden="false" UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+          <w:LsdException Locked="false" Priority="67" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+          <w:LsdException Locked="false" Priority="68" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+          <w:LsdException Locked="false" Priority="69" SemiHidden="false" UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+          <w:LsdException Locked="false" Priority="70" SemiHidden="false" UnhideWhenUsed="false" Name="Dark List Accent 6" />
+          <w:LsdException Locked="false" Priority="71" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Shading Accent 6"
+          />
+          <w:LsdException Locked="false" Priority="72" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+          <w:LsdException Locked="false" Priority="73" SemiHidden="false" UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+          <w:LsdException Locked="false" Priority="19" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"
+          />
+          <w:LsdException Locked="false" Priority="21" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"
+          />
+          <w:LsdException Locked="false" Priority="31" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"
+          />
+          <w:LsdException Locked="false" Priority="32" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"
+          />
+          <w:LsdException Locked="false" Priority="33" SemiHidden="false" UnhideWhenUsed="false" QFormat="true" Name="Book Title"
+          />
+          <w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+          <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" /></w:LatentStyles>
+      </xml>
+    <![endif]-->
+    <style>
+      <!--
+       /* Font Definitions */
+       @font-face
+        {font-family:Wingdings;
+        panose-1:5 0 0 0 0 0 0 0 0 0;
+        mso-font-charset:2;
+        mso-generic-font-family:auto;
+        mso-font-pitch:variable;
+        mso-font-signature:0 268435456 0 0 -2147483648 0;}
+      @font-face
+        {font-family:Wingdings;
+        panose-1:5 0 0 0 0 0 0 0 0 0;
+        mso-font-charset:2;
+        mso-generic-font-family:auto;
+        mso-font-pitch:variable;
+        mso-font-signature:0 268435456 0 0 -2147483648 0;}
+      @font-face
+        {font-family:Calibri;
+        panose-1:2 15 5 2 2 2 4 3 2 4;
+        mso-font-charset:204;
+        mso-generic-font-family:swiss;
+        mso-font-pitch:variable;
+        mso-font-signature:-536870145 1073786111 1 0 415 0;}
+       /* Style Definitions */
+       p.MsoNormal, li.MsoNormal, div.MsoNormal
+        {mso-style-unhide:no;
+        mso-style-qformat:yes;
+        mso-style-parent:"";
+        margin:0cm;
+        margin-bottom:.0001pt;
+        mso-pagination:widow-orphan;
+        font-size:12.0pt;
+        font-family:"Times New Roman","serif";
+        mso-fareast-font-family:"Times New Roman";}
+      h3
+        {mso-style-priority:9;
+        mso-style-unhide:no;
+        mso-style-qformat:yes;
+        mso-style-link:"Заголовок 3 Знак";
+        mso-style-next:Обычный;
+        margin-top:12.0pt;
+        margin-right:0cm;
+        margin-bottom:3.0pt;
+        margin-left:0cm;
+        mso-pagination:widow-orphan;
+        page-break-after:avoid;
+        mso-outline-level:3;
+        font-size:13.0pt;
+        font-family:"Arial","sans-serif";
+        mso-fareast-font-family:"Times New Roman";}
+      h4
+        {mso-style-priority:9;
+        mso-style-qformat:yes;
+        mso-style-link:"Заголовок 4 Знак";
+        mso-style-next:Обычный;
+        margin-top:12.0pt;
+        margin-right:0cm;
+        margin-bottom:3.0pt;
+        margin-left:0cm;
+        mso-pagination:widow-orphan;
+        page-break-after:avoid;
+        mso-outline-level:4;
+        font-size:14.0pt;
+        font-family:"Calibri","sans-serif";
+        mso-fareast-font-family:"Times New Roman";
+        mso-bidi-font-family:"Times New Roman";}
+      p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+        {mso-style-priority:99;
+        mso-style-unhide:no;
+        mso-style-link:"Основной текст Знак";
+        margin:0cm;
+        margin-bottom:.0001pt;
+        text-align:center;
+        mso-pagination:widow-orphan;
+        font-size:14.0pt;
+        mso-bidi-font-size:12.0pt;
+        font-family:"Times New Roman","serif";
+        mso-fareast-font-family:"Times New Roman";
+        font-weight:bold;}
+      p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+        {mso-style-link:"Основной текст с отступом Знак";
+        margin-top:0cm;
+        margin-right:0cm;
+        margin-bottom:6.0pt;
+        margin-left:14.15pt;
+        mso-pagination:widow-orphan;
+        font-size:12.0pt;
+        font-family:"Times New Roman","serif";
+        mso-fareast-font-family:"Times New Roman";}
+      p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+        {mso-style-unhide:no;
+        mso-style-link:"Основной текст 2 Знак";
+        margin-top:0cm;
+        margin-right:0cm;
+        margin-bottom:6.0pt;
+        margin-left:0cm;
+        line-height:200%;
+        mso-pagination:widow-orphan;
+        font-size:12.0pt;
+        font-family:"Times New Roman","serif";
+        mso-fareast-font-family:"Times New Roman";}
+      span.3
+        {mso-style-name:"Заголовок 3 Знак";
+        mso-style-priority:9;
+        mso-style-unhide:no;
+        mso-style-locked:yes;
+        mso-style-link:"Заголовок 3";
+        mso-ansi-font-size:13.0pt;
+        mso-bidi-font-size:13.0pt;
+        font-family:"Arial","sans-serif";
+        mso-ascii-font-family:Arial;
+        mso-fareast-font-family:"Times New Roman";
+        mso-hansi-font-family:Arial;
+        mso-bidi-font-family:Arial;
+        mso-fareast-language:RU;
+        font-weight:bold;}
+      span.4
+        {mso-style-name:"Заголовок 4 Знак";
+        mso-style-priority:9;
+        mso-style-unhide:no;
+        mso-style-locked:yes;
+        mso-style-link:"Заголовок 4";
+        mso-ansi-font-size:14.0pt;
+        mso-bidi-font-size:14.0pt;
+        font-family:"Calibri","sans-serif";
+        mso-ascii-font-family:Calibri;
+        mso-fareast-font-family:"Times New Roman";
+        mso-hansi-font-family:Calibri;
+        mso-bidi-font-family:"Times New Roman";
+        mso-fareast-language:RU;
+        font-weight:bold;}
+      span.a
+        {mso-style-name:"Основной текст Знак";
+        mso-style-priority:99;
+        mso-style-unhide:no;
+        mso-style-locked:yes;
+        mso-style-link:"Основной текст";
+        mso-ansi-font-size:14.0pt;
+        mso-bidi-font-size:12.0pt;
+        font-family:"Times New Roman","serif";
+        mso-ascii-font-family:"Times New Roman";
+        mso-fareast-font-family:"Times New Roman";
+        mso-hansi-font-family:"Times New Roman";
+        mso-bidi-font-family:"Times New Roman";
+        mso-fareast-language:RU;
+        font-weight:bold;}
+      span.a0
+        {mso-style-name:"Основной текст с отступом Знак";
+        mso-style-unhide:no;
+        mso-style-locked:yes;
+        mso-style-link:"Основной текст с отступом";
+        mso-ansi-font-size:12.0pt;
+        mso-bidi-font-size:12.0pt;
+        font-family:"Times New Roman","serif";
+        mso-ascii-font-family:"Times New Roman";
+        mso-fareast-font-family:"Times New Roman";
+        mso-hansi-font-family:"Times New Roman";
+        mso-bidi-font-family:"Times New Roman";
+        mso-fareast-language:RU;}
+      span.2
+        {mso-style-name:"Основной текст 2 Знак";
+        mso-style-unhide:no;
+        mso-style-locked:yes;
+        mso-style-link:"Основной текст 2";
+        mso-ansi-font-size:12.0pt;
+        mso-bidi-font-size:12.0pt;
+        font-family:"Times New Roman","serif";
+        mso-ascii-font-family:"Times New Roman";
+        mso-fareast-font-family:"Times New Roman";
+        mso-hansi-font-family:"Times New Roman";
+        mso-bidi-font-family:"Times New Roman";
+        mso-fareast-language:RU;}
+      span.SpellE
+        {mso-style-name:"";
+        mso-spl-e:yes;}
+      span.GramE
+        {mso-style-name:"";
+        mso-gram-e:yes;}
+      .MsoChpDefault
+        {mso-style-type:export-only;
+        mso-default-props:yes;
+        font-family:"Calibri","sans-serif";
+        mso-ascii-font-family:Calibri;
+        mso-ascii-theme-font:minor-latin;
+        mso-fareast-font-family:Calibri;
+        mso-fareast-theme-font:minor-latin;
+        mso-hansi-font-family:Calibri;
+        mso-hansi-theme-font:minor-latin;
+        mso-bidi-font-family:"Times New Roman";
+        mso-bidi-theme-font:minor-bidi;
+        mso-fareast-language:EN-US;}
+      .MsoPapDefault
+        {mso-style-type:export-only;
+        margin-bottom:10.0pt;
+        line-height:115%;}
+      @page WordSection1
+        {size:595.3pt 841.9pt;
+        margin:2.0cm 42.5pt 2.0cm 3.0cm;
+        mso-header-margin:35.4pt;
+        mso-footer-margin:35.4pt;
+        mso-paper-source:0;}
+      div.WordSection1
+        {page:WordSection1;}
+       /* List Definitions */
+       @list l0
+        {mso-list-id:884827450;
+        mso-list-type:hybrid;
+        mso-list-template-ids:1493065148 68747275 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+      @list l0:level1
+        {mso-level-number-format:bullet;
+        mso-level-text:\F0D8;
+        mso-level-tab-stop:36.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:Wingdings;}
+      @list l0:level2
+        {mso-level-number-format:bullet;
+        mso-level-text:o;
+        mso-level-tab-stop:72.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:"Courier New";
+        mso-bidi-font-family:"Times New Roman";}
+      @list l0:level3
+        {mso-level-number-format:bullet;
+        mso-level-text:\F0A7;
+        mso-level-tab-stop:108.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:Wingdings;}
+      @list l0:level4
+        {mso-level-number-format:bullet;
+        mso-level-text:\F0B7;
+        mso-level-tab-stop:144.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:Symbol;}
+      @list l0:level5
+        {mso-level-number-format:bullet;
+        mso-level-text:o;
+        mso-level-tab-stop:180.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:"Courier New";
+        mso-bidi-font-family:"Times New Roman";}
+      @list l0:level6
+        {mso-level-number-format:bullet;
+        mso-level-text:\F0A7;
+        mso-level-tab-stop:216.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:Wingdings;}
+      @list l0:level7
+        {mso-level-number-format:bullet;
+        mso-level-text:\F0B7;
+        mso-level-tab-stop:252.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:Symbol;}
+      @list l0:level8
+        {mso-level-number-format:bullet;
+        mso-level-text:o;
+        mso-level-tab-stop:288.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:"Courier New";
+        mso-bidi-font-family:"Times New Roman";}
+      @list l0:level9
+        {mso-level-number-format:bullet;
+        mso-level-text:\F0A7;
+        mso-level-tab-stop:324.0pt;
+        mso-level-number-position:left;
+        text-indent:-18.0pt;
+        font-family:Wingdings;}
+      ol
+        {margin-bottom:0cm;}
+      ul
+        {margin-bottom:0cm;}
+      -->
+    </style>
+    <!--[if gte mso 10]>
+      <style>
+        /* Style Definitions */
+         table.MsoNormalTable
+          {mso-style-name:"Обычная таблица";
+          mso-tstyle-rowband-size:0;
+          mso-tstyle-colband-size:0;
+          mso-style-noshow:yes;
+          mso-style-priority:99;
+          mso-style-parent:"";
+          mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+          mso-para-margin-top:0cm;
+          mso-para-margin-right:0cm;
+          mso-para-margin-bottom:10.0pt;
+          mso-para-margin-left:0cm;
+          line-height:115%;
+          mso-pagination:widow-orphan;
+          font-size:11.0pt;
+          font-family:"Calibri","sans-serif";
+          mso-ascii-font-family:Calibri;
+          mso-ascii-theme-font:minor-latin;
+          mso-hansi-font-family:Calibri;
+          mso-hansi-theme-font:minor-latin;
+          mso-fareast-language:EN-US;}
+      </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:shapedefaults v:ext="edit" spidmax="1026" />
+      </xml>
+    <![endif]-->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:shapelayout v:ext="edit">
+          <o:idmap v:ext="edit" data="1" /></o:shapelayout>
+      </xml>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground">
+      <tr>
+        <td width="13%" rowspan=3 align="center">
+          <img src="../../Оболочка/images/logo_new.png" width=117 align="middle" alt="Логотип БГУИР">
+        </td>
+        <tr>
+          <td width="70%" colspan=2 align="center" valign="middle">
+            <h1 align="center">Электронный учебно-методический комплекс по учебной дисциплине
+              <br>"Теория вероятностей и математическая статистика"
+              <br>для специальности:</h1>310304 «Информатика»</td>
+          <td width="12%" rowspan=3 align="center">&nbsp;</td>
+          <tr>
+            <td align=center colspan=2>
+              <var class="normal">
+                <a href="../../index.htm">Оглавление</a>|
+                <a href="../../Программа/program.htm">Программа</a>|
+                <a href="../../Теория/theory.htm">Теория</a>|
+                <a href="../../Практика/practice.htm">Практика</a>|
+                <a href="../../Контроль_знаний/test.htm">Контроль знаний</a>|
+                <a href="../../Об авторах/author.htm">Об авторах</a>
+              </var>
+            </td>
+          </tr>
+    </table>
+    <div class=WordSection1>
+      <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt;line-height:95%;mso-outline-level:2'>
+        <b>ТЕМА</b>
+        <b>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>8</span>.</b>
+        <b style='mso-bidi-font-weight:normal'>ФУНКЦИИ СЛУЧАЙНЫХ АРГУМЕНТОВ.
+          <span style='mso-bidi-font-weight:bold'>
+            <o:p></o:p>
+          </span>
+        </b>
+      </p>
+      <h3 style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm'>
+        <span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-font-kerning:16.0pt;mso-ansi-language:EN-US'>8</span>
+        <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-font-kerning:
+16.0pt'>.1. Числовые характеристики функций многих переменных
+          <o:p></o:p>
+        </span>
+      </h3>
+      <p class=MsoNormal style='text-align:justify'>
+        <span style='mso-tab-count:1'>           </span>Пусть
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>Y</span>
+        </i>=
+        <span style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'>
+          <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>j</span>
+        </span>(
+        <i>x
+          <sub>1</sub>, x
+          <sub>2</sub>,…</i>
+        <span class=SpellE>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:
+EN-US'>x
+              <sub>n</sub>
+            </span>
+          </i>
+        </span>), где
+        <i>Х
+          <span class=GramE>
+            <sub>1</sub>
+          </span>, Х
+          <sub>2</sub>,…Х</i>
+        <i>
+          <sub>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>n</span>
+          </sub>
+        </i>
+        <sub>
+          <span style='mso-spacerun:yes'> </span>
+        </sub>- случайные величины с известной совместной
+        <span lang=EN-US style='mso-ansi-language:EN-US'>n</span>-мерной плотностью вероятностей
+        <span style='position:relative;top:6.0pt;mso-text-raise:
+-6.0pt'>
+          <!--[if gte vml 1]>
+            <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+            stroked="f">
+              <v:stroke joinstyle="miter" />
+              <v:formulas>
+                <v:f eqn="if lineDrawn pixelLineWidth 0" />
+                <v:f eqn="sum @0 1 0" />
+                <v:f eqn="sum 0 0 @1" />
+                <v:f eqn="prod @2 1 2" />
+                <v:f eqn="prod @3 21600 pixelWidth" />
+                <v:f eqn="prod @3 21600 pixelHeight" />
+                <v:f eqn="sum @0 0 1" />
+                <v:f eqn="prod @6 1 2" />
+                <v:f eqn="prod @7 21600 pixelWidth" />
+                <v:f eqn="sum @8 21600 0" />
+                <v:f eqn="prod @7 21600 pixelHeight" />
+                <v:f eqn="sum @10 21600 0" /></v:formulas>
+              <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+              <o:lock v:ext="edit" aspectratio="t" />
+            </v:shapetype>
+            <v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:83.4pt;
+ height:21pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image001.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=139 height=35 src="8.files/image002.png" v:shapes="_x0000_i1025">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.2" ShapeID="_x0000_i1025" DrawAspect="Content" ObjectID="_1495814951"></o:OLEObject>
+          </xml>
+        <![endif]-->.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify'>
+        <i style='mso-bidi-font-style:
+normal'>Начальные моменты:
+          <o:p></o:p>
+        </i>
+      </p>
+      <p class=MsoNormal style='text-align:justify'>
+        <span style='position:relative;
+mso-text-raise:-15.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:336pt;height:50.4pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image003.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=560 height=84 src="8.files/image004.png" v:shapes="_x0000_i1026">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1026" DrawAspect="Content" ObjectID="_1495814952"></o:OLEObject>
+          </xml>
+        <![endif]-->
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyText style='text-align:justify'>
+        <i style='mso-bidi-font-style:
+normal'>
+          <span style='font-size:12.0pt;font-weight:normal;mso-bidi-font-weight:
+bold'>Центральные моменты:
+            <o:p></o:p>
+          </span>
+        </i>
+      </p>
+      <p class=MsoNormal style='text-align:justify'>
+        <span style='position:relative;
+mso-text-raise:-15.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1027" type="#_x0000_t75" style='width:335.4pt;height:49.8pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image005.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=559 height=83 src="8.files/image006.png" v:shapes="_x0000_i1027">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1027" DrawAspect="Content" ObjectID="_1495814953"></o:OLEObject>
+          </xml>
+        <![endif]-->
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyText>
+        <span style='font-size:12.0pt'>Основные числовые характеристики:
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoBodyText>
+        <span style='font-size:12.0pt'>
+          <o:p>&nbsp;</o:p>
+        </span>
+      </p>
+      <p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>
+        <![if !supportLists]>
+          <span style='font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings'>
+            <span style='mso-list:Ignore'>&Oslash;
+              <span style='font:7.0pt "Times New Roman"'>&nbsp;</span>
+            </span>
+          </span>
+        <![endif]>Математическое ожидание функции от произвольного числа случайных аргументов. Для непрерывных величин:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='text-align:center'>
+        <span style='position:relative;mso-text-raise:-15.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1028" type="#_x0000_t75" style='width:423pt;height:36.6pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image007.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=705 height=61 src="8.files/image008.png" v:shapes="_x0000_i1028">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.2" ShapeID="_x0000_i1028" DrawAspect="Content" ObjectID="_1495814954"></o:OLEObject>
+          </xml>
+        <![endif]-->,
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify'>где
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify'>
+        <span style='position:relative;
+mso-text-raise:-6.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1029" type="#_x0000_t75" style='width:83.4pt;height:18.6pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image009.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=139 height=31 src="8.files/image010.png" v:shapes="_x0000_i1029">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.2" ShapeID="_x0000_i1029" DrawAspect="Content" ObjectID="_1495814955"></o:OLEObject>
+          </xml>
+        <![endif]-->- плотность распределения системы
+        <span style='position:relative;
+mso-text-raise:-6.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1030" type="#_x0000_t75" style='width:86.4pt;height:18.6pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image011.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=144 height=31 src="8.files/image012.png" v:shapes="_x0000_i1030">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.2" ShapeID="_x0000_i1030" DrawAspect="Content" ObjectID="_1495814956"></o:OLEObject>
+          </xml>
+        <![endif]-->.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>
+        <![if !supportLists]>
+          <span style='font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings'>
+            <span style='mso-list:Ignore'>&Oslash;
+              <span style='font:7.0pt "Times New Roman"'>&nbsp;</span>
+            </span>
+          </span>
+        <![endif]>Дисперсия функции от произвольного числа аргументов для непрерывных случайных величин
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-left:18.0pt;text-align:center'>
+        <span style='position:relative;mso-text-raise:-15.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1031" type="#_x0000_t75" style='width:472.2pt;height:36.6pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image013.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=787 height=61 src="8.files/image014.png" v:shapes="_x0000_i1031">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.2" ShapeID="_x0000_i1031" DrawAspect="Content" ObjectID="_1495814957"></o:OLEObject>
+          </xml>
+        <![endif]-->
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='margin-left:18.0pt'>
+        <span style='mso-spacerun:yes'> </span>или аналогичная форма
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='text-align:center'>
+        <span style='position:relative;mso-text-raise:-15.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1032" type="#_x0000_t75" style='width:444.6pt;height:38.4pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image015.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=741 height=64 src="8.files/image016.png" v:shapes="_x0000_i1032">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.2" ShapeID="_x0000_i1032" DrawAspect="Content" ObjectID="_1495814958"></o:OLEObject>
+          </xml>
+        <![endif]-->
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-indent:27.0pt'>На практике редко известна совместная плотность вероятности; известны лишь числовые характеристики. Определение числовых
+        характеристик функций по заданным числовым характеристикам аргументам значительно упрощает решение задач теории вероятностей.
+        Чаще всего такие упрощенные функции относятся к линейным функциям, однако некоторые элементарные нелинейные функции также
+        подразумевают подобный подход.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:27.0pt'>Пусть известны векторы М
+        <span style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>
+          <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>[</span>
+        </span>
+        <i>х</i>
+        <span class=SpellE>
+          <i>
+            <sub>
+              <span lang=EN-US style='mso-ansi-language:EN-US'>i</span>
+            </sub>
+          </i>
+        </span>
+        <i>
+          <span lang=EN-US></span>
+        </i>
+        <span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'>
+          <span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>]</span>
+        </span>=
+        <span lang=EN-US style='mso-ansi-language:EN-US'>m
+          <sub>i</sub>
+        </span>
+        <sub>
+          <span style='mso-spacerun:yes'>    </span>
+        </sub>
+        <span lang=EN-US style='mso-ansi-language:
+EN-US'>D</span>
+        <span lang=EN-US></span>
+        <span lang=EN-US style='font-family:
+Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-char-type:symbol;mso-symbol-font-family:Symbol'>
+          <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>[</span>
+        </span>
+        <i>х</i>
+        <span class=SpellE>
+          <i>
+            <sub>
+              <span lang=EN-US style='mso-ansi-language:EN-US'>i</span>
+            </sub>
+          </i>
+        </span>
+        <sub>
+          <span lang=EN-US></span>
+        </sub>
+        <span lang=EN-US style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-char-type:symbol;mso-symbol-font-family:Symbol'>
+          <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>]</span>
+        </span>=
+        <span lang=EN-US style='mso-ansi-language:EN-US'>D
+          <sub>i</sub>
+        </span>системы случайных величин
+        <span style='mso-spacerun:yes'> </span>(
+        <i>Х
+          <sub>1</sub>, Х
+          <sub>2</sub>,…Х</i>
+        <i>
+          <sub>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>n</span>
+          </sub>
+        </i>
+        <span class=GramE>
+          <sub>
+            <span lang=EN-US></span>
+          </sub>)</span>
+        <sub></sub>- с известной совместной
+        <span lang=EN-US style='mso-ansi-language:EN-US'>n</span>-мерной плотностью вероятностей
+        <span style='position:relative;mso-text-raise:
+-6.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1033" type="#_x0000_t75" style='width:83.4pt;height:21pt' o:ole="" fillcolor="window">
+              <v:imagedata src="8.files/image001.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=139 height=35 src="8.files/image002.png" v:shapes="_x0000_i1033">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.2" ShapeID="_x0000_i1033" DrawAspect="Content" ObjectID="_1495814959"></o:OLEObject>
+          </xml>
+        <![endif]-->,
+        <span style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>
+          <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&ecirc;
+            <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&ecirc;</span>
+          </span>
+        </span>К
+        <span class=SpellE>
+          <sub>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>ij</span>
+          </sub>
+        </span>
+        <span style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'>
+          <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&ecirc;
+            <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&ecirc;</span>
+          </span>
+        </span>- корреляционная матрица
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify'>
+        <span style='mso-tab-count:1'>           </span>Задача определения числовых характеристик
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>Y</span>
+        </i>в таком случае разрешима только для определения классов функций
+        <span style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>
+          <span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>j</span>
+        </span>.
+        <o:p></o:p>
+      </p>
+      <h3 style='text-indent:1.0cm'>
+        <span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase;mso-ansi-language:
+EN-US;mso-bidi-font-weight:normal'>8</span>
+        <span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";text-transform:uppercase;mso-bidi-font-weight:
+normal'>.2
+          <span class=GramE>.
+            <span style='mso-spacerun:yes'> </span>Х
+            <span style='text-transform:none'>арактеристические</span>
+          </span>
+        </span>
+        <span style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-weight:
+normal'>функции и моменты
+          <span style='text-transform:uppercase'>
+            <o:p></o:p>
+          </span>
+        </span>
+      </h3>
+      <h4 style='text-indent:1.0cm'>
+        <i style='mso-bidi-font-style:normal'>
+          <span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-font-kerning:16.0pt;mso-ansi-language:EN-US'>8</span>
+        </i>
+        <i style='mso-bidi-font-style:normal'>
+          <span style='font-size:12.0pt;font-family:
+"Times New Roman","serif";mso-font-kerning:16.0pt'>.2.1. Характеристические функции
+            <span style='mso-tab-count:1'>       </span>
+            <o:p></o:p>
+          </span>
+        </i>
+      </h4>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>До сих пор мы задавали случайные величины законом распределения. Характеристическая функция - ещё один способ представления
+        случайных величин.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Пусть
+        <i>X</i>- случайная величина. Её характеристической функцией
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+        </i>(
+        <i>t</i>) назовём математическое ожидание случайной величины
+        <i>e
+          <span class=SpellE>
+            <sup>
+              <span style='position:relative;top:-2.5pt;mso-text-raise:2.5pt'>itX</span>
+            </sup>
+          </span>
+        </i>:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <span class=GramE>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>w</span>(</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+        </i>)
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>Me
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.5pt;
+mso-text-raise:2.5pt'>itX</span>
+              </sup>
+            </span>
+          </span>
+        </i>,
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+text-autospace:none'>где под комплексной случайной величиной
+        <i>e
+          <span class=SpellE>
+            <sup>
+              <span style='position:relative;top:-2.5pt;mso-text-raise:
+2.5pt'>itX</span>
+            </sup>
+          </span>
+        </i>
+        <span style='mso-spacerun:yes'> </span>мы понимаем комплексное число
+        <span style='font-family:Symbol'>
+          <span style='mso-spacerun:yes'> </span>
+        </span>
+        <i>e
+          <span class=SpellE>
+            <sup>
+              <span style='position:relative;top:-2.5pt;mso-text-raise:2.5pt'>it</span>
+            </sup>
+          </span>
+          <sup>
+            <span style='position:relative;top:-2.5pt;mso-text-raise:2.5pt'>
+              <span style='mso-spacerun:yes'> </span>X</span>
+          </sup>
+        </i>
+        <span style='font-family:
+Symbol'>=</span>
+        <span class=SpellE>cos</span>(
+        <span class=SpellE>
+          <i>tX</i>
+        </span>
+        <i>)</i>
+        <span style='font-family:Symbol'>+</span>
+        <span class=SpellE>
+          <i>i</i>sin</span>(
+        <span class=SpellE>
+          <i>tX</i>
+        </span>
+        <i>)</i>,
+        <span style='font-family:Symbol'></span>а
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyText style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm'>
+        <i>
+          <span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+EN-US;font-weight:normal;mso-bidi-font-weight:bold'>
+            <span style='position:relative;
+mso-text-raise:-5.0pt'>
+              <!--[if gte vml 1]>
+                <v:shape id="_x0000_i1034" type="#_x0000_t75" style='width:188.4pt;height:21.6pt' o:ole="">
+                  <v:imagedata src="8.files/image017.wmz" o:title="" /></v:shape>
+              <![endif]-->
+              <![if !vml]>
+                <img width=314 height=36 src="8.files/image018.png" v:shapes="_x0000_i1034">
+              <![endif]>
+            </span>
+            <!--[if gte mso 9]>
+              <xml>
+                <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034" DrawAspect="Content" ObjectID="_1495814960"></o:OLEObject>
+              </xml>
+            <![endif]-->
+          </span>
+        </i>
+        <i style='mso-bidi-font-style:normal'>
+          <span style='font-size:12.0pt;font-weight:normal;mso-bidi-font-weight:bold'>;
+            <o:p></o:p>
+          </span>
+        </i>
+      </p>
+      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+text-autospace:none'>независимая переменная
+        <i>t</i>имеет размерность
+        <i>X</i>
+        <sup>
+          <span style='font-family:Symbol;position:relative;top:-1.5pt;mso-text-raise:1.5pt'>-</span>
+          <span style='position:relative;top:-2.5pt;mso-text-raise:2.5pt'>1</span>
+        </sup>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Характеристическая функция - преобразование Фурье-Стилтьеса функции распределения:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='text-align:center;text-indent:1.0cm;
+mso-layout-grid-align:none;text-autospace:none'>
+        <span lang=EN-US style='mso-ansi-language:EN-US'>
+          <span style='position:relative;
+mso-text-raise:-17.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1035" type="#_x0000_t75" style='width:101.4pt;height:41.4pt' o:ole="">
+                <v:imagedata src="8.files/image019.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=169 height=69 src="8.files/image020.png" v:shapes="_x0000_i1035">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035" DrawAspect="Content" ObjectID="_1495814961"></o:OLEObject>
+            </xml>
+          <![endif]-->
+        </span>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>В непрерывном случае
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+        </i>(
+        <i>t</i>) - преобразование Фурье плотности вероятности:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <span style='position:relative;mso-text-raise:
+-17.0pt'>
+          <span style='mso-spacerun:yes'> </span>
+        </span>
+        <span lang=EN-US style='mso-ansi-language:EN-US'>
+          <span style='position:relative;
+mso-text-raise:-17.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1036" type="#_x0000_t75" style='width:107.4pt;height:41.4pt' o:ole="">
+                <v:imagedata src="8.files/image021.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=179 height=69 src="8.files/image022.png" v:shapes="_x0000_i1036">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036" DrawAspect="Content" ObjectID="_1495814962"></o:OLEObject>
+            </xml>
+          <![endif]-->
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+text-autospace:none'>Если
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+        </i>(
+        <i>t</i>) абсолютно интегрируема, то обратное преобразование Фурье позволяет восстановить плотность
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>f</span>
+        </i>(
+        <i>x</i>) по характеристической функции:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>
+            <span style='position:relative;mso-text-raise:-17.0pt'>
+              <!--[if gte vml 1]>
+                <v:shape id="_x0000_i1037" type="#_x0000_t75" style='width:129.6pt;height:41.4pt' o:ole="">
+                  <v:imagedata src="8.files/image023.wmz" o:title="" /></v:shape>
+              <![endif]-->
+              <![if !vml]>
+                <img width=216 height=69 src="8.files/image024.png" v:shapes="_x0000_i1037">
+              <![endif]>
+            </span>
+            <!--[if gte mso 9]>
+              <xml>
+                <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037" DrawAspect="Content" ObjectID="_1495814963"></o:OLEObject>
+              </xml>
+            <![endif]-->
+          </span>
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>В дискретном случае:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>
+            <span style='position:relative;mso-text-raise:-15.0pt'>
+              <!--[if gte vml 1]>
+                <v:shape id="_x0000_i1038" type="#_x0000_t75" style='width:131.4pt;height:30pt' o:ole="">
+                  <v:imagedata src="8.files/image025.wmz" o:title="" /></v:shape>
+              <![endif]-->
+              <![if !vml]>
+                <img width=219 height=50 src="8.files/image026.png" v:shapes="_x0000_i1038">
+              <![endif]>
+            </span>
+            <!--[if gte mso 9]>
+              <xml>
+                <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038" DrawAspect="Content" ObjectID="_1495814964"></o:OLEObject>
+              </xml>
+            <![endif]-->
+          </span>
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Особо отметим дискретные случайные величины с целочисленными значениями, например, при
+        <span style='mso-spacerun:yes'> </span>
+        <i>x
+          <sub>
+            <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>k</span>
+          </sub>
+        </i>
+        <span style='font-family:Symbol'>=</span>
+        <i>k</i>:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='text-align:center;text-indent:1.0cm;
+mso-layout-grid-align:none;text-autospace:none'>
+        <span style='position:relative;
+mso-text-raise:-15.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1039" type="#_x0000_t75" style='width:87.6pt;height:30pt' o:ole="">
+              <v:imagedata src="8.files/image027.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=146 height=50 src="8.files/image028.png" v:shapes="_x0000_i1039">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039" DrawAspect="Content" ObjectID="_1495814965"></o:OLEObject>
+          </xml>
+        <![endif]-->
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+text-autospace:none'>здесь
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+        </i>(
+        <i>t</i>) - ряд Фурье в комплексной форме, вероятности
+        <i>p
+          <sub>
+            <span style='position:
+relative;top:1.5pt;mso-text-raise:-1.5pt'>k</span>
+          </sub>
+        </i>
+        <span style='mso-spacerun:yes'> </span>играют роль коэффициентов Фурье и легко восстанавливаются по
+        <i>f</i>(
+        <i>t</i>):
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>
+            <span style='position:relative;mso-text-raise:-17.0pt'>
+              <!--[if gte vml 1]>
+                <v:shape id="_x0000_i1040" type="#_x0000_t75" style='width:117pt;height:41.4pt' o:ole="">
+                  <v:imagedata src="8.files/image029.wmz" o:title="" /></v:shape>
+              <![endif]-->
+              <![if !vml]>
+                <img width=195 height=69 src="8.files/image030.png" v:shapes="_x0000_i1040">
+              <![endif]>
+            </span>
+            <!--[if gte mso 9]>
+              <xml>
+                <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040" DrawAspect="Content" ObjectID="_1495814966"></o:OLEObject>
+              </xml>
+            <![endif]-->
+          </span>
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>В общем случае восстановление закона распределения по характеристической функции тоже возможно, но более сложно.
+        <o:p></o:p>
+      </p>
+      <h4 style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;text-indent:1.0cm'>
+        <i style='mso-bidi-font-style:normal'>
+          <span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>8</span>
+        </i>
+        <i style='mso-bidi-font-style:normal'>
+          <span style='font-size:12.0pt'>.2.2. Свойства характеристических функций
+            <o:p></o:p>
+          </span>
+        </i>
+      </h4>
+      <p class=MsoNormal style='text-align:justify;text-indent:27.0pt'>
+        <span class=GramE>Важнейшим свойством характеристической функции, сделавшим её одним из главных инструментов современной теории вероятностей,
+          оказалось то, что
+          <i>при суммировании независимых случайных величин их характеристические функции перемножаются:</i>если
+          <i>X</i>и
+          <i>Y</i>независимы, то для случайной величины
+          <i>Z</i>
+          <span style='font-family:Symbol'>=</span>
+          <i>X</i>
+          <span style='font-family:Symbol'>+</span>
+          <i>Y</i>:
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>w
+              <sub>
+                <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>Z</span>
+              </sub>
+            </span>
+          </i>(
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+          </i>)
+          <span style='font-family:Symbol'>=</span>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>w
+              <sub>
+                <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>X</span>
+              </sub>
+            </span>
+          </i>(
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+          </i>)
+          <span style='font-family:Symbol'>&times;</span>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>w
+              <sub>
+                <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>Y</span>
+              </sub>
+            </span>
+          </i>(
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+          </i>).</span>
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Действительно,
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w
+            <sub>
+              <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>Z</span>
+            </sub>
+          </span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+        </i>)
+        <span style='font-family:
+Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>M</span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>itZ</span>
+              </sup>
+            </span>
+          </span>
+        </i>)
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>M</span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <sup>
+              <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>it</span>
+            </sup>
+          </span>
+        </i>
+        <sup>
+          <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>(</span>
+        </sup>
+        <i>
+          <sup>
+            <span lang=EN-US style='position:relative;top:-2.0pt;mso-text-raise:2.0pt;mso-ansi-language:
+EN-US'>X</span>
+          </sup>
+        </i>
+        <sup>
+          <span style='font-family:Symbol;position:relative;
+top:-1.5pt;mso-text-raise:1.5pt'>+</span>
+        </sup>
+        <i>
+          <sup>
+            <span lang=EN-US style='position:relative;top:-2.0pt;mso-text-raise:2.0pt;mso-ansi-language:
+EN-US'>Y</span>
+          </sup>
+        </i>
+        <sup>
+          <span style='position:relative;top:-2.0pt;
+mso-text-raise:2.0pt'>)</span>
+        </sup>)
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>M</span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>itX</span>
+              </sup>
+            </span>
+          </span>
+        </i>
+        <span style='font-family:Symbol'>&times;</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;
+mso-text-raise:2.0pt'>itY</span>
+              </sup>
+            </span>
+          </span>
+        </i>)
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>M</span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;mso-text-raise:
+2.0pt'>itX</span>
+              </sup>
+            </span>
+          </span>
+        </i>)
+        <span style='font-family:Symbol'>&times;</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>M</span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>itY</span>
+              </sup>
+            </span>
+          </span>
+        </i>)
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>w
+            <sub>
+              <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>X</span>
+            </sub>
+          </span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+        </i>)
+        <span style='font-family:
+Symbol'>&times;</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w
+            <sub>
+              <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>Y</span>
+            </sub>
+          </span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+        </i>).
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt'>
+        <span style='font-size:12.0pt;font-weight:normal;mso-bidi-font-weight:bold'>Законы распределения при суммировании независимых слагаемых ведут себя гораздо сложнее (см. Л12, закон распределения суммы
+          случайных величин).
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoBodyText style='text-align:justify'>
+        <span style='font-size:12.0pt;
+font-weight:normal'>Если</span>
+        <span style='font-size:12.0pt;font-family:Symbol;
+font-weight:normal'></span>
+        <span style='font-size:12.0pt;font-weight:normal'>
+          <span style='mso-spacerun:yes'> </span>
+          <span class=SpellE>
+            <i>Y</i>
+            <span style='font-family:Symbol'>=</span>
+            <i>aX</i>
+            <span style='font-family:Symbol'>+</span>
+            <i>b</i>
+          </span>,</span>
+        <span style='font-size:12.0pt;font-family:Symbol;font-weight:normal'></span>
+        <span style='font-size:12.0pt;font-weight:normal'>то
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w
+            <sub>
+              <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>Y</span>
+            </sub>
+          </span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+        </i>)
+        <span style='font-family:
+Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>M</span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <sup>
+              <span style='position:relative;
+top:-2.0pt;mso-text-raise:2.0pt'>it</span>
+            </sup>
+          </span>
+        </i>
+        <sup>
+          <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>(</span>
+        </sup>
+        <span class=SpellE>
+          <i>
+            <sup>
+              <span lang=EN-US style='position:relative;top:-2.0pt;
+mso-text-raise:2.0pt;mso-ansi-language:EN-US'>aX</span>
+            </sup>
+          </i>
+        </span>
+        <sup>
+          <span style='font-family:Symbol;position:relative;top:-1.5pt;mso-text-raise:1.5pt'>+</span>
+        </sup>
+        <i>
+          <sup>
+            <span lang=EN-US style='position:relative;top:-2.0pt;mso-text-raise:2.0pt;mso-ansi-language:
+EN-US'>b</span>
+          </sup>
+        </i>
+        <sup>
+          <span style='position:relative;top:-2.0pt;
+mso-text-raise:2.0pt'>)</span>
+        </sup>)
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>itb</span>
+              </sup>
+            </span>
+          </span>
+        </i>
+        <span style='font-family:Symbol'>&times;</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>M</span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;mso-text-raise:
+2.0pt'>itaX</span>
+              </sup>
+            </span>
+          </span>
+        </i>)
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>itb</span>
+              </sup>
+            </span>
+          </span>
+        </i>
+        <span style='font-family:Symbol'>&times;</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>w
+            <sub>
+              <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>X</span>
+            </sub>
+          </span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>at</span>
+        </i>).
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Другим важным свойством характеристических функций является их простая связь с
+        <i>моментами</i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Предполагая возможность дифференцирования под знаком математического ожидания в равенстве
+        <span style='font-family:Symbol'></span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+        </i>(
+        <i>t</i>)
+        <span style='font-family:Symbol'>=</span>
+        <span class=SpellE>
+          <i>Me
+            <sup>
+              <span style='position:relative;top:-2.5pt;mso-text-raise:2.5pt'>itX</span>
+            </sup>
+          </i>
+        </span>,
+        <span style='font-family:Symbol'></span>получим:
+        <span style='font-family:Symbol'>
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:1.0cm;
+mso-layout-grid-align:none;text-autospace:none'>
+        <span class=GramE>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+          </i>
+          <sup>
+            <span style='position:relative;top:-1.0pt;mso-text-raise:1.0pt'>(</span>
+          </sup>
+        </span>
+        <i>
+          <sup>
+            <span lang=EN-US style='position:relative;top:-1.0pt;mso-text-raise:1.0pt;mso-ansi-language:
+EN-US'>k</span>
+          </sup>
+        </i>
+        <sup>
+          <span style='position:relative;top:-1.0pt;
+mso-text-raise:1.0pt'>)</span>
+        </sup>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>t</span>
+        </i>)
+        <span style='font-family:Symbol'>=</span>
+        <span class=SpellE>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>i</span>
+          </i>
+        </span>
+        <i>
+          <sup>
+            <span lang=EN-US style='position:relative;top:-1.0pt;mso-text-raise:1.0pt;mso-ansi-language:
+EN-US'>k</span>
+          </sup>
+        </i>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>M</span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>X
+            <sup>
+              <span style='position:relative;
+top:-2.0pt;mso-text-raise:2.0pt'>k</span>
+            </sup>
+          </span>
+        </i>
+        <span style='font-family:Symbol'>&times;</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>e
+            <span class=SpellE>
+              <sup>
+                <span style='position:relative;top:-2.0pt;
+mso-text-raise:2.0pt'>itX</span>
+              </sup>
+            </span>
+          </span>
+        </i>).
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>При
+        <span style='font-family:Symbol'></span>
+        <i>t</i>
+        <span style='font-family:Symbol'>=</span>0:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:1.0cm;
+mso-layout-grid-align:none;text-autospace:none'>
+        <span style='font-family:Symbol'>
+          <span style='position:relative;top:14.0pt;mso-text-raise:-14.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1041" type="#_x0000_t75" style='width:291.6pt;height:36pt' o:ole="">
+                <v:imagedata src="8.files/image031.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=486 height=60 src="8.files/image032.png" v:shapes="_x0000_i1041">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041" DrawAspect="Content" ObjectID="_1495814967"></o:OLEObject>
+            </xml>
+          <![endif]-->
+          <span style='mso-spacerun:yes'> </span>
+        </span>
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Таким образом,
+        <i>характеристическая функция позволяет заменить интегрирование при вычислении моментов дифференцированием.</i>
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>В частности,
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-14.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1042" type="#_x0000_t75" style='width:413.4pt;height:36pt' o:ole="">
+                <v:imagedata src="8.files/image033.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=689 height=60 src="8.files/image034.png" v:shapes="_x0000_i1042">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042" DrawAspect="Content" ObjectID="_1495814968"></o:OLEObject>
+            </xml>
+          <![endif]-->
+          <o:p></o:p>
+        </i>
+      </p>
+      <p class=MsoNormal style='margin-top:4.0pt;text-align:justify;text-indent:1.0cm;
+line-height:120%;mso-layout-grid-align:none;text-autospace:none'>Характеристическую функцию определяют также и для
+        <i>n</i>-мерной случайной величины (
+        <i>X</i>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+        </sub>,
+        <i>X</i>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>2</span>
+        </sub>, ,
+        <span style='font-family:Symbol'>&frac14;</span>,
+        <i>X
+          <sub>
+            <span style='position:
+relative;top:1.5pt;mso-text-raise:-1.5pt'>n</span>
+          </sub>
+        </i>):
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='text-align:center;line-height:120%;
+mso-layout-grid-align:none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+        </i>(
+        <i>t</i>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+        </sub>,
+        <i>t</i>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>2</span>
+        </sub>, ,
+        <span style='font-family:Symbol'>&frac14;</span>,
+        <i>t
+          <sub>
+            <span style='position:
+relative;top:1.5pt;mso-text-raise:-1.5pt'>n</span>
+          </sub>
+        </i>)
+        <span style='font-family:Symbol'>=</span>
+        <i>M</i>(
+        <span class=SpellE>exp
+          <i>i</i>
+        </span>(
+        <i>t</i>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+        </sub>
+        <i>X</i>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+        </sub>
+        <span style='font-family:Symbol'>+</span>
+        <i>t</i>
+        <sub>
+          <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>2</span>
+        </sub>
+        <i>X</i>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>2</span>
+        </sub>
+        <span style='font-family:Symbol'>+&frac14;+</span>
+        <i>t
+          <sub>
+            <span style='position:
+relative;top:1.5pt;mso-text-raise:-1.5pt'>n</span>
+          </sub>X
+          <sub>
+            <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>n</span>
+          </sub>
+        </i>)).
+        <o:p></o:p>
+      </p>
+      <h3>
+        <i style='mso-bidi-font-style:normal'>
+          <span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman","serif";mso-bidi-font-family:Arial;
+mso-font-kerning:16.0pt;mso-ansi-language:EN-US'>8</span>
+        </i>
+        <i style='mso-bidi-font-style:normal'>
+          <span style='font-size:12.0pt;font-family:
+"Times New Roman","serif";mso-bidi-font-family:Arial;mso-font-kerning:16.0pt'>.3. Примеры применения характеристических функций
+            <o:p></o:p>
+          </span>
+        </i>
+      </h3>
+      <p class=MsoNormal style='text-indent:1.0cm;mso-outline-level:4'>
+        <b>
+          <i style='mso-bidi-font-style:normal'>
+            <span lang=EN-US style='mso-ansi-language:
+EN-US'>8</span>.3.1
+            <span class=GramE>.
+              <span style='font-weight:normal'>
+                <span style='mso-spacerun:yes'> </span>Биноминальное</span>
+            </span>
+          </i>
+        </b>
+        <i style='mso-bidi-font-style:normal'>распределение.
+          <o:p></o:p>
+        </i>
+      </p>
+      <p class=MsoNormal style='text-indent:1.0cm'>Пусть дискретная случайная величина имеет биноминальное распределение
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>X</span>:</i>
+        <span class=GramE>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>B</span>
+          </i>(</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>n</span>
+        </i>,
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>p</span>
+        </i>).
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:120%;
+mso-layout-grid-align:none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>
+            <span style='position:relative;
+mso-text-raise:-15.0pt'>
+              <!--[if gte vml 1]>
+                <v:shape id="_x0000_i1043" type="#_x0000_t75" style='width:200.4pt;height:36.6pt' o:ole="">
+                  <v:imagedata src="8.files/image035.wmz" o:title="" /></v:shape>
+              <![endif]-->
+              <![if !vml]>
+                <img width=334 height=61 src="8.files/image036.png" v:shapes="_x0000_i1043">
+              <![endif]>
+            </span>
+            <!--[if gte mso 9]>
+              <xml>
+                <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043" DrawAspect="Content" ObjectID="_1495814969"></o:OLEObject>
+              </xml>
+            <![endif]-->
+          </span>
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;line-height:120%;mso-layout-grid-align:
+none;text-autospace:none'>Дифференцирование даёт:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:120%;
+mso-layout-grid-align:none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-14.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1044" type="#_x0000_t75" style='width:312pt;height:36pt' o:ole="">
+                <v:imagedata src="8.files/image037.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=520 height=60 src="8.files/image038.png" v:shapes="_x0000_i1044">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044" DrawAspect="Content" ObjectID="_1495814970"></o:OLEObject>
+            </xml>
+          <![endif]-->
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-indent:1.0cm;mso-outline-level:4'>
+        <b>
+          <i style='mso-bidi-font-style:normal'>14.3.2.</i>
+        </b>
+        <i style='mso-bidi-font-style:
+normal'>Пуассоновское распределение.
+          <o:p></o:p>
+        </i>
+      </p>
+      <p class=MsoNormal style='text-indent:1.0cm'>Пусть дискретная случайная величина имеет пуассоновское распределение
+        <i>X</i>:
+        <span style='font-family:
+Symbol'>P</span>(
+        <span style='font-family:Symbol'>l</span>).
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:120%;
+mso-layout-grid-align:none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-15.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1045" type="#_x0000_t75" style='width:302.4pt;height:39pt' o:ole="">
+                <v:imagedata src="8.files/image039.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=504 height=65 src="8.files/image040.png" v:shapes="_x0000_i1045">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045" DrawAspect="Content" ObjectID="_1495814971"></o:OLEObject>
+            </xml>
+          <![endif]-->
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;line-height:120%;mso-layout-grid-align:
+none;text-autospace:none'>Отсюда сразу найдём:
+        <span style='font-family:Symbol'>
+          <span style='mso-spacerun:yes'> </span>
+        </span>
+        <i>M</i>[
+        <i>X</i>]
+        <span style='font-family:Symbol'>=l</span>, D[
+        <i>X</i>]
+        <span style='font-family:Symbol'>=l</span>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-indent:1.0cm;mso-outline-level:4'>
+        <span class=GramE>
+          <b>
+            <i style='mso-bidi-font-style:normal'>
+              <span lang=EN-US style='font-family:Symbol;mso-ansi-language:EN-US'>8</span>
+            </i>
+          </b>
+          <b>
+            <i style='mso-bidi-font-style:normal'>
+              <span style='font-family:Symbol'>.3.3.</span>
+            </i>
+          </b>
+          <i style='mso-bidi-font-style:normal'>Экспоненциальный закон распределения
+            <span style='mso-bidi-font-weight:bold'>.</span>
+          </i>
+        </span>
+        <i style='mso-bidi-font-style:
+normal'>
+          <o:p></o:p>
+        </i>
+      </p>
+      <p class=MsoNormal style='text-indent:1.0cm'>Пусть непрерывная случайная величина имеет экспоненциальное распределение X:Exp(
+        <span style='font-family:
+Symbol'>m</span>).
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:120%;
+mso-layout-grid-align:none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-17.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1046" type="#_x0000_t75" style='width:147.6pt;height:41.4pt' o:ole="">
+                <v:imagedata src="8.files/image041.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=246 height=69 src="8.files/image042.png" v:shapes="_x0000_i1046">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046" DrawAspect="Content" ObjectID="_1495814972"></o:OLEObject>
+            </xml>
+          <![endif]-->
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-indent:26.95pt'>Из этого равенства следует:
+        <span style='font-family:Symbol'>
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:120%;
+mso-layout-grid-align:none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-16.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1047" type="#_x0000_t75" style='width:147pt;height:38.4pt' o:ole="">
+                <v:imagedata src="8.files/image043.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=245 height=64 src="8.files/image044.png" v:shapes="_x0000_i1047">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047" DrawAspect="Content" ObjectID="_1495814973"></o:OLEObject>
+            </xml>
+          <![endif]-->
+          <o:p></o:p>
+        </i>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:26.95pt;mso-outline-level:
+4;mso-layout-grid-align:none;text-autospace:none'>
+        <b>
+          <i style='mso-bidi-font-style:
+normal'>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>8</span>.3.4.</i>
+        </b>
+        <i style='mso-bidi-font-style:normal'>Нормальный закон распределения.
+          <o:p></o:p>
+        </i>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:27.0pt;mso-layout-grid-align:
+none;text-autospace:none'>Пусть непрерывная случайная величина имеет нормальное распределение
+        <span style='mso-spacerun:yes'> </span>X:N(0, 1).
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-17.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1048" type="#_x0000_t75" style='width:126.6pt;height:44.4pt' o:ole="">
+                <v:imagedata src="8.files/image045.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=211 height=74 src="8.files/image046.png" v:shapes="_x0000_i1048">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048" DrawAspect="Content" ObjectID="_1495814974"></o:OLEObject>
+            </xml>
+          <![endif]-->
+        </i>
+        <span style='mso-spacerun:yes'> </span>
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-indent:27.0pt;mso-layout-grid-align:none;
+text-autospace:none'>Примем во внимание,
+        <span class=SpellE>что
+          <span style='font-family:Symbol'></span>
+          <i>e
+            <sup>
+              <span style='position:relative;
+top:-1.5pt;mso-text-raise:1.5pt'>itx</span>
+            </sup>
+          </i>
+        </span>
+        <span style='font-family:Symbol'>=</span>
+        <span class=SpellE>cos</span>(
+        <span class=SpellE>
+          <i>tx</i>
+        </span>
+        <i>)</i>
+        <span style='font-family:Symbol'>+</span>
+        <span class=SpellE>
+          <i>i</i>sin</span>(
+        <span class=SpellE>
+          <i>tx</i>
+        </span>
+        <i>)</i>:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-17.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1049" type="#_x0000_t75" style='width:287.4pt;height:44.4pt' o:ole="">
+                <v:imagedata src="8.files/image047.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=479 height=74 src="8.files/image048.png" v:shapes="_x0000_i1049">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049" DrawAspect="Content" ObjectID="_1495814975"></o:OLEObject>
+            </xml>
+          <![endif]-->
+        </i>
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-indent:27.0pt'>Второй из этих интегралов равен нулю, так как его подынтегральная функция нечётна. Ввиду чётности подынтегральной функции
+        первого интеграла:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>
+            <span style='position:relative;mso-text-raise:-17.0pt'>
+              <!--[if gte vml 1]>
+                <v:shape id="_x0000_i1050" type="#_x0000_t75" style='width:146.4pt;height:44.4pt' o:ole="">
+                  <v:imagedata src="8.files/image049.wmz" o:title="" /></v:shape>
+              <![endif]-->
+              <![if !vml]>
+                <img width=244 height=74 src="8.files/image050.png" v:shapes="_x0000_i1050">
+              <![endif]>
+            </span>
+            <!--[if gte mso 9]>
+              <xml>
+                <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050" DrawAspect="Content" ObjectID="_1495814976"></o:OLEObject>
+              </xml>
+            <![endif]-->
+          </span>
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyText style='text-align:justify'>
+        <span style='font-size:12.0pt;
+font-weight:normal'>Обозначим:</span>
+        <span style='font-size:12.0pt;font-family:
+Symbol;font-weight:normal'></span>
+        <span style='font-size:12.0pt;font-weight:
+normal'>
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>
+            <span style='position:relative;mso-text-raise:-17.0pt'>
+              <!--[if gte vml 1]>
+                <v:shape id="_x0000_i1051" type="#_x0000_t75" style='width:123.6pt;height:44.4pt' o:ole="">
+                  <v:imagedata src="8.files/image051.wmz" o:title="" /></v:shape>
+              <![endif]-->
+              <![if !vml]>
+                <img width=206 height=74 src="8.files/image052.png" v:shapes="_x0000_i1051">
+              <![endif]>
+            </span>
+            <!--[if gte mso 9]>
+              <xml>
+                <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1051" DrawAspect="Content" ObjectID="_1495814977"></o:OLEObject>
+              </xml>
+            <![endif]-->
+          </span>
+        </i>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Очевидно,
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-21.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1052" type="#_x0000_t75" style='width:242.4pt;height:48.6pt' o:ole="">
+                <v:imagedata src="8.files/image053.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=404 height=81 src="8.files/image054.png" v:shapes="_x0000_i1052">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1052" DrawAspect="Content" ObjectID="_1495814978"></o:OLEObject>
+            </xml>
+          <![endif]-->
+        </i>;
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+text-autospace:none'>интегрируем по частям:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span style='position:relative;
+mso-text-raise:-17.0pt'>
+            <!--[if gte vml 1]>
+              <v:shape id="_x0000_i1053" type="#_x0000_t75" style='width:284.4pt;height:44.4pt' o:ole="">
+                <v:imagedata src="8.files/image055.wmz" o:title="" /></v:shape>
+            <![endif]-->
+            <![if !vml]>
+              <img width=474 height=74 src="8.files/image056.png" v:shapes="_x0000_i1053">
+            <![endif]>
+          </span>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1053" DrawAspect="Content" ObjectID="_1495814979"></o:OLEObject>
+            </xml>
+          <![endif]-->
+        </i>
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyText2>Таким образом,
+        <span style='font-family:Symbol'>
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoBodyText style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm'>
+        <i>
+          <span style='font-size:12.0pt;font-weight:normal;
+mso-bidi-font-weight:bold'>J’</span>
+        </i>
+        <span style='font-size:12.0pt;
+font-weight:normal;mso-bidi-font-weight:bold'>(
+          <i>t</i>)</span>
+        <span style='font-size:12.0pt;font-family:Symbol;font-weight:normal;mso-bidi-font-weight:
+bold'>=-</span>
+        <span class=SpellE>
+          <i>
+            <span style='font-size:12.0pt;font-weight:
+normal;mso-bidi-font-weight:bold'>tJ</span>
+          </i>
+        </span>
+        <span style='font-size:
+12.0pt;font-weight:normal;mso-bidi-font-weight:bold'>(
+          <i>t</i>),</span>
+        <span style='font-size:12.0pt;font-family:Symbol;font-weight:normal;mso-bidi-font-weight:
+bold'>
+          <span style='mso-spacerun:yes'> </span>
+        </span>
+        <span style='font-size:
+12.0pt;font-weight:normal;mso-bidi-font-weight:bold'>и</span>
+        <span style='font-size:12.0pt;font-family:Symbol;font-weight:normal;mso-bidi-font-weight:
+bold'>
+          <span style='mso-spacerun:yes'> </span>
+        </span>
+        <i>
+          <span style='font-size:
+12.0pt;font-weight:normal;mso-bidi-font-weight:bold'>J</span>
+        </i>
+        <span style='font-size:12.0pt;font-weight:normal;mso-bidi-font-weight:bold'>(0)</span>
+        <span style='font-size:12.0pt;font-family:Symbol'>=</span>
+        <span style='font-size:
+12.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1054" type="#_x0000_t75" style='width:21pt;height:23.4pt' o:ole="">
+              <v:imagedata src="8.files/image057.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=35 height=39 src="8.files/image058.png" v:shapes="_x0000_i1054">
+          <![endif]>
+          <!--[if gte mso 9]>
+            <xml>
+              <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1054" DrawAspect="Content" ObjectID="_1495814980"></o:OLEObject>
+            </xml>
+          <![endif]-->.
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Решение этого дифференциального уравнения дает:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>
+            <span style='position:relative;mso-text-raise:-17.0pt'>
+              <!--[if gte vml 1]>
+                <v:shape id="_x0000_i1055" type="#_x0000_t75" style='width:180.6pt;height:44.4pt' o:ole="">
+                  <v:imagedata src="8.files/image059.wmz" o:title="" /></v:shape>
+              <![endif]-->
+              <![if !vml]>
+                <img width=301 height=74 src="8.files/image060.png" v:shapes="_x0000_i1055">
+              <![endif]>
+            </span>
+            <!--[if gte mso 9]>
+              <xml>
+                <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1055" DrawAspect="Content" ObjectID="_1495814981"></o:OLEObject>
+              </xml>
+            <![endif]-->
+          </span>
+        </i>
+        <span lang=EN-US>
+          <span style='mso-spacerun:yes'> </span>
+        </span>
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyTextIndent>Окончательно:&#61472;
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:1.0cm;
+mso-layout-grid-align:none;text-autospace:none'>
+        <span class=GramE>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+          </i>(</span>
+        <i>t</i>)
+        <span style='font-family:Symbol'>=</span>
+        <!--[if gte vml 1]>
+          <v:shape id="_x0000_i1056" type="#_x0000_t75" style='width:24.6pt;height:21.6pt' o:ole="">
+            <v:imagedata src="8.files/image061.wmz" o:title="" /></v:shape>
+        <![endif]-->
+        <![if !vml]>
+          <img width=41 height=36 src="8.files/image062.png" v:shapes="_x0000_i1056">
+        <![endif]>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1056" DrawAspect="Content" ObjectID="_1495814982"></o:OLEObject>
+          </xml>
+        <![endif]-->.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:1.0cm;
+mso-layout-grid-align:none;text-autospace:none'>Тогда
+        <span style='mso-spacerun:yes'> </span>для
+        <span style='font-family:Symbol'></span>
+        <span style='mso-spacerun:yes'> </span>нормально распределенной случайной величины X:N(
+        <i>a</i>,
+        <span style='font-family:Symbol'>s</span>):
+        <span style='mso-spacerun:yes'> </span>
+        <span style='position:relative;mso-text-raise:-18.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1057" type="#_x0000_t75" style='width:134.4pt;height:42.6pt' o:ole="">
+              <v:imagedata src="8.files/image063.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=224 height=71 src="8.files/image064.png" v:shapes="_x0000_i1057">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1057" DrawAspect="Content" ObjectID="_1495814983"></o:OLEObject>
+          </xml>
+        <![endif]-->
+        <span style='font-family:Symbol'>
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+text-autospace:none'>и сразу же находим: M[
+        <i>X</i>]
+        <span style='font-family:
+Symbol'>=</span>
+        <i>a</i>, D[
+        <i>X</i>]
+        <span style='font-family:Symbol'>=s</span>
+        <sup>
+          <span style='position:relative;top:-2.0pt;mso-text-raise:2.0pt'>2</span>
+        </sup>.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>По поводу характеристической функции нормального закона можно заметить интересное его свойство:
+        <o:p></o:p>
+      </p>
+      <div style='mso-element:para-border-div;border:none;border-left:double windowtext 2.25pt;
+padding:0cm 0cm 0cm 1.0pt;margin-left:8.5pt;margin-right:0cm'>
+        <p class=MsoNormal style='text-align:justify;tab-stops:1.0cm;mso-layout-grid-align:
+none;text-autospace:none;border:none;mso-border-left-alt:double windowtext 2.25pt;
+padding:0cm;mso-padding-alt:0cm 0cm 0cm 1.0pt'>
+          <i>сумма</i>
+          <i>независимых</i>
+          <i>нормально распределённых случайных величин распределена по нормальному</i>закону.
+          <o:p></o:p>
+        </p>
+      </div>
+      <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Действительно. Пусть
+        <i>X</i>и
+        <i>Y</i>независимые случайные величины, причём,
+        <o:p></o:p>
+      </p>
+      <p class=MsoBodyText style='text-align:justify'>
+        <i>
+          <span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US;font-weight:normal'>X</span>
+        </i>
+        <span class=GramE>
+          <span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US;
+font-weight:normal'>:
+            <i>N</i>
+          </span>
+        </span>
+        <span lang=EN-US style='font-size:
+12.0pt;mso-ansi-language:EN-US;font-weight:normal'>(
+          <i>a</i>
+          <sub>
+            <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+          </sub>,</span>
+        <span style='font-size:12.0pt;font-family:Symbol;font-weight:normal'>s</span>
+        <sub>
+          <span lang=EN-US style='font-size:12.0pt;position:relative;top:1.5pt;mso-text-raise:
+-1.5pt;mso-ansi-language:EN-US;font-weight:normal'>1</span>
+        </sub>
+        <span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US;font-weight:normal'>),
+          <i>Y:N</i>(
+          <i>a</i>
+          <sub>
+            <span style='position:relative;top:1.5pt;mso-text-raise:
+-1.5pt'>2</span>
+          </sub>,</span>
+        <span style='font-size:12.0pt;font-family:Symbol;
+font-weight:normal'>s</span>
+        <sub>
+          <span lang=EN-US style='font-size:12.0pt;
+position:relative;top:1.5pt;mso-text-raise:-1.5pt;mso-ansi-language:EN-US;
+font-weight:normal'>2</span>
+        </sub>
+        <span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US;font-weight:normal'>),</span>
+        <span style='font-size:
+12.0pt;font-weight:normal'>а</span>
+        <span style='font-size:12.0pt;mso-ansi-language:
+EN-US;font-weight:normal'>
+          <i>
+            <span lang=EN-US>Z</span>
+          </i>
+        </span>
+        <span style='font-size:12.0pt;font-family:Symbol;font-weight:normal'>=</span>
+        <i>
+          <span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US;font-weight:normal'>X</span>
+        </i>
+        <span style='font-size:12.0pt;font-family:Symbol;font-weight:normal'>+</span>
+        <i>
+          <span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US;font-weight:normal'>Y</span>
+        </i>
+        <span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US;font-weight:normal'>.
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Характеристические функции
+        <i>X</i>и
+        <i>Y</i>:
+        <span style='mso-spacerun:yes'> </span>
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:1.0cm;
+mso-layout-grid-align:none;text-autospace:none'>
+        <span class=GramE>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>w
+              <sub>
+                <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>X</span>
+              </sub>
+            </span>
+          </i>(</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+        </i>)
+        <span style='font-family:
+Symbol'>=</span>
+        <!--[if gte vml 1]>
+          <v:shape id="_x0000_i1058" type="#_x0000_t75" style='width:48.6pt;height:27pt' o:ole="">
+            <v:imagedata src="8.files/image065.wmz" o:title="" /></v:shape>
+        <![endif]-->
+        <![if !vml]>
+          <img width=81 height=45 src="8.files/image066.png" v:shapes="_x0000_i1058">
+        <![endif]>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1058" DrawAspect="Content" ObjectID="_1495814984"></o:OLEObject>
+          </xml>
+        <![endif]-->,
+        <span style='mso-spacerun:yes'> </span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w
+            <sub>
+              <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>Y</span>
+            </sub>
+          </span>
+        </i>(
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>t</span>
+        </i>)
+        <span style='font-family:Symbol'>=</span>
+        <!--[if gte vml 1]>
+          <v:shape id="_x0000_i1059" type="#_x0000_t75" style='width:50.4pt;height:27pt' o:ole="">
+            <v:imagedata src="8.files/image067.wmz" o:title="" /></v:shape>
+        <![endif]-->
+        <![if !vml]>
+          <img width=84 height=45 src="8.files/image068.png" v:shapes="_x0000_i1059">
+        <![endif]>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1059" DrawAspect="Content" ObjectID="_1495814985"></o:OLEObject>
+          </xml>
+        <![endif]-->.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Для характеристической функции
+        <i>Z</i>имеем:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;mso-layout-grid-align:
+none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w
+            <sub>
+              <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>Z</span>
+            </sub>
+          </span>
+        </i>
+        <span lang=EN-US style='mso-ansi-language:EN-US'>(
+          <i>t</i>)</span>
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>w
+            <sub>
+              <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>X</span>
+            </sub>
+          </span>
+        </i>
+        <span lang=EN-US style='mso-ansi-language:EN-US'>(
+          <i>t</i>)</span>
+        <span style='font-family:Symbol'>&times;</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>w
+            <sub>
+              <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>Y</span>
+            </sub>
+          </span>
+        </i>
+        <span lang=EN-US style='mso-ansi-language:EN-US'>(
+          <i>t</i>)</span>
+        <span style='font-family:Symbol'>=</span>
+        <span class=SpellE>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>exp</span>
+        </span>
+        <span lang=EN-US style='mso-ansi-language:EN-US'>[
+          <span class=SpellE>
+            <i>i</i>
+          </span>(
+          <i>a</i>
+          <sub>
+            <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+          </sub>
+        </span>
+        <span style='font-family:Symbol'>+</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>a</span>
+        </i>
+        <sub>
+          <span lang=EN-US style='position:relative;top:1.5pt;
+mso-text-raise:-1.5pt;mso-ansi-language:EN-US'>2</span>
+        </sub>
+        <span lang=EN-US style='mso-ansi-language:EN-US'>)
+          <i>t</i>
+        </span>
+        <span style='font-family:Symbol'>-</span>
+        <!--[if gte vml 1]>
+          <v:shape id="_x0000_i1060" type="#_x0000_t75" style='width:36pt;height:26.4pt' o:ole="">
+            <v:imagedata src="8.files/image069.wmz" o:title="" /></v:shape>
+        <![endif]-->
+        <![if !vml]>
+          <img width=60 height=44 src="8.files/image070.png" v:shapes="_x0000_i1060">
+        <![endif]>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1060" DrawAspect="Content" ObjectID="_1495814986"></o:OLEObject>
+          </xml>
+        <![endif]-->
+        <span class=SpellE>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:
+EN-US'>t</span>
+          </i>
+        </span>
+        <sup>
+          <span lang=EN-US style='position:relative;
+top:-2.0pt;mso-text-raise:2.0pt;mso-ansi-language:EN-US'>2</span>
+        </sup>
+        <span lang=EN-US style='mso-ansi-language:EN-US'>],
+          <o:p></o:p>
+        </span>
+      </p>
+      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+text-autospace:none'>но это означает, что
+        <span style='position:relative;
+mso-text-raise:-7.0pt'>
+          <!--[if gte vml 1]>
+            <v:shape id="_x0000_i1061" type="#_x0000_t75" style='width:144.6pt;height:24pt' o:ole="">
+              <v:imagedata src="8.files/image071.wmz" o:title="" /></v:shape>
+          <![endif]-->
+          <![if !vml]>
+            <img width=241 height=40 src="8.files/image072.png" v:shapes="_x0000_i1061">
+          <![endif]>
+        </span>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1061" DrawAspect="Content" ObjectID="_1495814987"></o:OLEObject>
+          </xml>
+        <![endif]-->
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;mso-layout-grid-align:
+none;text-autospace:none'>Аналогичным свойством обладают и
+        <i>независимые</i>
+        <i>пуассоновские</i>случайные величины: сумма независимых случайных величин, распределённых по закону Пуассона, распределена
+        по закону Пуассона.
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;text-indent:1.0cm;line-height:
+120%;mso-layout-grid-align:none;text-autospace:none'>В самом деле, если
+        <i>X:</i>
+        <span style='font-family:Symbol'>P</span>(
+        <span style='font-family:Symbol'>l</span>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+        </sub>),
+        <i>X:</i>
+        <span style='font-family:Symbol'>P</span>(
+        <span style='font-family:Symbol'>l</span>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>2</span>
+        </sub>), то
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:120%;
+mso-layout-grid-align:none;text-autospace:none'>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+          <sub>
+            <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>X</span>
+          </sub>
+        </i>(
+        <i>t</i>)
+        <span style='font-family:Symbol'>=</span>
+        <span class=SpellE>exp</span>[
+        <span style='font-family:Symbol'>l</span>
+        <sub>
+          <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+        </sub>(
+        <i>e
+          <span class=SpellE>
+            <sup>
+              <span style='position:relative;top:-1.5pt;mso-text-raise:1.5pt'>it</span>
+            </sup>
+          </span>
+        </i>
+        <span style='font-family:Symbol'>-</span>1)],
+        <span style='mso-spacerun:yes'> </span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+          <sub>
+            <span style='position:
+relative;top:1.5pt;mso-text-raise:-1.5pt'>Y</span>
+          </sub>
+        </i>(
+        <i>t</i>)
+        <span style='font-family:Symbol'>=</span>
+        <span class=SpellE>exp</span>[
+        <span style='font-family:Symbol'>l</span>
+        <sub>
+          <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>2</span>
+        </sub>(
+        <i>e
+          <span class=SpellE>
+            <sup>
+              <span style='position:relative;top:-1.5pt;mso-text-raise:1.5pt'>it</span>
+            </sup>
+          </span>
+        </i>
+        <span style='font-family:Symbol'>-</span>1)],
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;line-height:120%;mso-layout-grid-align:
+none;text-autospace:none'>поэтому характеристическая функция случайной величины
+        <i>Z</i>
+        <span style='font-family:Symbol'>=</span>
+        <i>X</i>
+        <span style='font-family:Symbol'>+</span>
+        <i>Y</i>:
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:120%;
+mso-layout-grid-align:none;text-autospace:none'>
+        <span class=GramE>
+          <i>
+            <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+            <sub>
+              <span style='position:
+relative;top:1.5pt;mso-text-raise:-1.5pt'>Z</span>
+            </sub>
+          </i>(</span>
+        <i>t</i>)
+        <span style='font-family:Symbol'>=</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:
+EN-US'>w</span>
+          <sub>
+            <span style='position:relative;top:1.5pt;mso-text-raise:
+-1.5pt'>X</span>
+          </sub>
+        </i>(
+        <i>t</i>)
+        <span style='font-family:Symbol'>&times;</span>
+        <i>
+          <span lang=EN-US style='mso-ansi-language:EN-US'>w</span>
+          <sub>
+            <span style='position:
+relative;top:1.5pt;mso-text-raise:-1.5pt'>Y</span>
+          </sub>
+        </i>(
+        <i>t</i>)
+        <span style='font-family:Symbol'>=</span>
+        <span class=SpellE>exp</span>[(
+        <span style='font-family:Symbol'>l</span>
+        <sub>
+          <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+        </sub>
+        <span style='font-family:Symbol'>+l</span>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>2</span>
+        </sub>)(
+        <i>e
+          <span class=SpellE>
+            <sup>
+              <span style='position:relative;top:-1.5pt;mso-text-raise:
+1.5pt'>it</span>
+            </sup>
+          </span>
+        </i>
+        <span style='font-family:Symbol'>-</span>1)],
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal style='text-align:justify;line-height:120%;mso-layout-grid-align:
+none;text-autospace:none'>но это значит, что
+        <i>Z:</i>
+        <span style='font-family:
+Symbol'>P</span>(
+        <span style='font-family:Symbol'>l</span>
+        <sub>
+          <span style='position:relative;top:1.5pt;mso-text-raise:-1.5pt'>1</span>
+        </sub>
+        <span style='font-family:Symbol'>+l</span>
+        <sub>
+          <span style='position:relative;
+top:1.5pt;mso-text-raise:-1.5pt'>2</span>
+        </sub>).
+        <o:p></o:p>
+      </p>
+      <p class=MsoNormal>
+        <i>Законы, сохраняющиеся при сложении независимых случайных величин, называются безгранично делимыми.</i>Нормальный и пуассоновский
+        - примеры таких законов.</p>
+      <P></P>
+    </div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground tableBottom">
+      <tr>
+        <td align=center>
+          <var>
+            <b>&copy; БГУИР</b>
+          </var>
+        </td>
+      </tr>
+    </table>
+  </body>
+
+</html>

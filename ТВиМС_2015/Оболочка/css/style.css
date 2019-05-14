@@ -1,0 +1,332 @@
+td h1 {
+    text-transform: none;
+    font-family: arial, helvetica, sans-serif;
+    color: #fffafa;
+    font-size: 200%;
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: arial, helvetica, sans-serif;
+    color: black;
+    font-size: 200%;
+}
+
+h2 {
+    text-align: left;
+    text-transform: none;
+    font-family: arial, helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 170%;
+    font-weight: bold;
+}
+
+var {
+    text-align: center;
+    text-transform: none;
+    font-family: tahoma, verdana, sans-serif;
+    color: #fffafa;
+    font-size: 80%;
+    margin-top: 0;
+    font: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+code {
+    text-align: justify;
+    font-family: sans-serif;
+    color: #339999;
+    font-size: 90%;
+    font-style: normal;
+    padding-left: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 100%;
+    letter-spacing: 0px;
+}
+
+em {
+    font-family: verdana, sans-serif;
+    font-style: normal;
+    color: #5a5a5a;
+    text-align: center;
+}
+
+input {
+    border: 2px solid black;
+    font-size: 120%;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: center;
+}
+
+td.spec2 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 1px;
+}
+
+.black {
+    margin-left: 10px;
+    color: black;
+}
+
+.bigmargin {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #5a5a5a;
+    font-size: 90%
+}
+
+.bigmargin2 {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #5a5a5a;
+    font-size: 85%
+}
+
+.unmargined {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0px;
+}
+
+.copyright {
+    font-size: xx-small;
+    font-family: tahoma, arial, sans-serif;
+    text-align: right;
+}
+
+.smallheader {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.dot {
+    color: black;
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 2px;
+}
+
+td {
+    font-family: verdana, sans-serif;
+    font-style: normal;
+    font-size: 90%;
+}
+
+li {
+    font-size: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+body {
+    color: black;
+    background-color: #fffbfb;
+    font-size: 80%;
+    letter-spacing: 0.10em;
+    text-align: justify;
+    font-family: tahoma, verdana, sans-serif;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+a {
+    color: #6495ed;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00387F;
+    text-decoration: underline;
+}
+
+table {
+    text-align: start;
+    white-space: normal;
+    line-height: normal;
+    font-size: initial;
+    font-weight: initial;
+    font-style: initial;
+    font-variant: initial;
+}
+
+a[name] {
+    width: 220px;
+    height: 270px;
+    display: block;
+    margin: 0px auto;
+}
+
+a[name="program"] {
+    background-image: url("../images/program_gray.jpg");
+}
+
+a[name="program"]:hover {
+    background-image: url("../images/program.jpg");
+}
+
+a[name="theory"] {
+    background-image: url("../images/theory_gray.jpg");
+}
+
+a[name="theory"]:hover {
+    background-image: url("../images/theory.jpg");
+}
+
+a[name="practice"] {
+    background-image: url("../images/practice_gray.jpg");
+}
+
+a[name="practice"]:hover {
+    background-image: url("../images/practice.jpg");
+}
+
+a[name="tests"] {
+    background-image: url("../images/question_gray.jpg");
+}
+
+a[name="tests"]:hover {
+    background-image: url("../images/question.jpg");
+}
+
+.left {
+    float: left;
+    width: 25%;
+}
+
+.right {
+    float: right;
+    width: 75%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#author {
+    height: 180px;
+    display: block;
+    float: right;
+}
+
+.author_content {
+    width: 60%;
+    margin: 0 auto;
+    height: 180px;
+}
+
+.author_content span {
+    font-size: large;
+    min-width: 400px;
+    display: inline-block;
+    padding: 8% 0 0 1%;
+}
+
+.tableBackground {
+    background-image: url('../../Оболочка/images/background.jpg');
+}
+
+.tableBottom {
+    border: #316ac5;
+    height: 25px;
+}
+
+.margined {
+    margin: 0 20%;
+    text-align: center;
+}
+
+.margined ol {
+    padding: 0;
+}
+
+.margined li {
+    padding: 10px;
+}
+
+.margined .topics li {
+    text-align: center;
+    list-style: none;
+}
+
+.margined em {
+    font-family: tahoma, verdana, sans-serif;
+    font-size: 90%;
+    color: #aaa;
+    visibility: hidden;
+}
+
+.em_wrap {
+    display: inline-block;
+}
+
+.em_wrap:hover em {
+    visibility: visible;
+}
+
+.em_wrap table,
+.em_wrap td {
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid;
+    padding: 3px;
+    font-size: inherit;
+}
+
+.em_wrap p {
+    margin: 0;
+    text-align: left;
+}
+
+.menu_element {
+    letter-spacing: 0.1em;
+}
+
+.WordSection1 {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.WordSection1 > p:first-child {
+    text-align: center;
+}
+
+.margined .WordSection1 > p:first-child {
+  text-align: left;
+}
+
+.program_topics_list {
+    list-style: none;
+}
+
+.program_topics_list li {
+    padding: 2px;
+}
+
+.tr_pdf_link {
+    text-align: center;
+    font-weight: bold;
+}
+.WordSection1 h2 {
+    color: inherit;
+}

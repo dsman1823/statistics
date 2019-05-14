@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//RU">
+<!-- (c) 2015 Pankratov Anton & Arabadzhi Bogdan, BSUIR -->
+<html>
+
+<head>
+  <link rel=stylesheet href="../Оболочка/css/style.css" type="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="ru">
+  <title>Практика по дисциплине &quot;Теория вероятностей и математическая статистика&quot;</title>
+  <base target="_top">
+
+  <script type="text/javascript" src="../Оболочка/scripts/MathJax/MathJax.js?config=default"></script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+    });
+  </script>
+</head>
+
+<body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground">
+    <tr>
+      <td width="13%" rowspan=3 align="center">
+        <img src="../Оболочка/images/logo_new.png" width=117 align="middle" alt="Логотип БГУИР">
+      </td>
+      <tr>
+        <td width="70%" colspan=2 align="center" valign="middle">
+          <h1 align="center">Электронный учебно-методический комплекс по учебной дисциплине
+            <br> "Теория вероятностей и математическая статистика"
+            <br> для специальности: </h1>
+          310304 «Информатика»</td>
+        <td width="12%" rowspan=3 align="center">&nbsp;</td>
+        <tr>
+          <td align=center colspan=2>
+            <var class="normal">
+              <a href="../index.htm">Оглавление</a> |
+              <a href="../Программа/program.htm">Программа</a> |
+              <a href="../Теория/theory.htm">Теория</a> |
+              <a href="../Практика/practice.htm">Практика</a> |
+              <a href="../Контроль_знаний/test.htm">Контроль знаний</a> |
+              <a href="../Об авторах/author.htm">Об авторах</a>
+            </var>
+          </td>
+        </tr>
+  </table>
+
+  <br>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      var link = document.getElementById('task_one_show_link'),
+          content = document.getElementById('task_one_show'),
+          wrapper = document.getElementById('task_one'),
+          isContentHovered = false;
+
+
+      content.onmouseover =  function(e) {
+        isContentHovered = true;
+      }
+
+      content.onmouseout =  function() {
+        isContentHovered = false;
+      }
+
+      link.onmouseover = function(e) {
+        e.preventDefault();
+
+        content.style.display = "block";
+      }
+
+      link.onmouseout = function(e) {
+        e.preventDefault();
+
+        if(isContentHovered) return;
+
+        content.style.display = "none";
+      }
+    });
+  </script>
+
+  <div class="margined">
+    <div>
+      <ol>
+        <li>
+          В двух ящиках находятся по шесть шаров; в первом ящике: один шар с номером 1, два шара с номером 2, 3 шара с номером 3. Во втором ящике: два шара с номером 1, три шара с номером 2, один шар с номером 3. Пусть \(X\) номер шара вынутого из первого ящика, \(Y\) номер шара, вынутого из второго ящика. Из каждого ящика вынули по шару. Составить матрицу вероятностей двумерной случайной величины \(X\), \(Y\). Найти одномерные ряды распределений составляющих \(X\) и \(Y\).
+          <br>
+          <div class="em_wrap" id="task_one"><em>
+            Ответ: <a id="task_one_show_link" href="#" style="color:#aaa;"><strong>наведи курсор</strong></a>
+            <span id="task_one_show" style="display:none;">
+              <div style="width:100%;">
+                <table>
+                  <thead>
+                    <tr>
+                      <td>\(Y\)&emsp;\&emsp;\(X\)</td>
+                      <td>\(x_1=1\)</td>
+                      <td>\(x_2=2\)</td>
+                      <td>\(x_3=3\)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>\(y_1=2\)</td>
+                      <td>1/18</td>
+                      <td>1/9</td>
+                      <td>1/6</td>
+                    </tr>
+                    <tr>
+                      <td>\(y_2=3\)</td>
+                      <td>1/12</td>
+                      <td>1/6</td>
+                      <td>1/4</td>
+                    </tr>
+                    <tr>
+                      <td>\(y_3=1\)</td>
+                      <td>1/36</td>
+                      <td>1/18</td>
+                      <td>1/12</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Одномерные ряды составляющих \(X\) и \(Y\):</p>
+              <div style="float:left;width:45%;">
+                <table>
+                  <thead>
+                    <tr>
+                      <td>\(X\)</td>
+                      <td>\(x_1=1\)</td>
+                      <td>\(x_2=2\)</td>
+                      <td>\(x_3=3\)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td>1/6</td>
+                      <td>1/3</td>
+                      <td>1/2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="float:right;width:45%;">
+                <table>
+                  <thead>
+                    <tr>
+                      <td>\(Y\)</td>
+                      <td>\(y_1=2\)</td>
+                      <td>\(y_2=3\)</td>
+                      <td>\(y_3=1\)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td>1/3</td>
+                      <td>1/2</td>
+                      <td>1/6</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="clearfix"></div>
+            </span>
+          </em></div>
+        </li>
+        <li>
+          Двумерная случайная величина имеет закон распределения с плотностью:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( f(x,y) = \begin{cases}
+             a(x,y), (x,y) \in D  \\
+             0, (x,y) \not \in D
+             \end{cases}
+            \)
+          <br>
+          Область \(D\) - квадрат ограниченный прямыми \(x = 0\), \(x = 3\), \(y = 0\), \(y = 3\). Tребуется определить коэффициент \(a\); вычислить вероятность попадания случайной точки \((X, Y)\) в квадрат \(Q\), ограниченный прямыми \(x = 1\), \(x = 2\), \(y = 1\), \(y = 2\).
+          <div class="em_wrap"><em>(Ответ: \(a = 1\), \(P = 1/9\))</em></div>
+        </li>
+        <li>
+          Двумерная случайная величина распределена по закону:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \(
+            f(x,y)=a/(1 + x^2 + y^2 + x^2y^2), -\infty < x < \infty, -\infty < y < \infty
+          \)
+          <br>
+          Найти коэффициент \(a\), установить зависимость случайных величин \(X\) и \(Y\).
+          <div class="em_wrap"><em>(Ответ: \(a = 1/\pi^2\), независимы)</em></div>
+        </li>
+        <li>
+          Имеются две независимые случайные величины \((X, Y)\), распределенные по показательному закону:
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( f_1(x) = \begin{cases}
+             0, x < 0  \\
+             \lambda e^{-\lambda x}, x > 0
+             \end{cases}
+          \)
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \( f_2(y) = \begin{cases}
+             0, y < 0  \\
+             \mu e^{-\mu y}, y > 0
+             \end{cases}
+          \)
+          <br>
+          Найти \(f(x, y)\), \(F(x, y)\).
+          <div class="em_wrap"><em>(Ответ:  \(f(x, y)=\lambda \mu e^{-(\lambda x + \mu y)}\);  \(F(x, y)=(1-e^{-\lambda x})(1-e^{-\mu y})\))</em></div>
+        </li>
+        <li>
+          Положение случайной точки \((X, Y)\) равновозможно в любом месте круга радиусом \(R\), центр которого совпадает с началом координат. Определить плотность распределения и функцию распределения каждой составляющей \(X\) и \(Y\). Выяснить зависимость \(X\) и \(Y\).
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          \(
+            f(x,y) = \begin{cases}
+             1/\pi R^2, x^2 + y^2 \leqslant R^2  \\
+             0, x^2 + y^2 > R^2
+            \end{cases}
+          \)
+          <div class="em_wrap"><em>(Ответ: \(f_1(x)=\frac{2}{\pi R^2} \sqrt{R^2 - x^2}\), \(f_2(y)=\frac{2}{\pi R^2} \sqrt{R^2 - y^2}\), \(X\) и \(Y\) независимы)</em></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="3" class="tableBackground tableBottom">
+    <tr>
+      <td align=center>
+        <var>
+          <b>&copy; БГУИР</b>
+        </var>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
